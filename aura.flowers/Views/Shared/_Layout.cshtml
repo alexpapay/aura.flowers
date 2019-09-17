@@ -1,0 +1,149 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@*@ViewData["Title"] -*@ Aura.Flowers</title>
+
+    <environment include="Development">
+
+    </environment>
+    <environment exclude="Development">
+
+    </environment>
+    <link rel="stylesheet" href="/assets/font-awesome/all.min.css">
+    <link rel="stylesheet" href="/assets/font-awesome/brands.min.css">
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/css/owl.theme.default.min.css">
+</head>
+<body>
+    <nav id="navigation-section">
+        <div class="menu-container">
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+
+            <div class="logo">
+                <a href="#header-section"><img src="/img/logo.png"></a>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a class="scroll-to" id="about-as-menu" href="#about-us-section"><span>@Localizer["About Us"]</span></a></li>
+                    <li><a class="scroll-to" href="#products-section">@Localizer["Products"]</a></li>
+                    <li><a class="scroll-to" href="#portfolio-section">@Localizer["Portfolio"]</a></li>
+                    <li><a class="scroll-to" href="#testimonials-section">@Localizer["Feedback"]</a></li>
+                    <li><a class="scroll-to" href="#contacts-section">@Localizer["Contacts"]</a></li>
+                </ul>
+            </div>
+
+            <div class="social">
+                <ul>
+                    <li>
+                        <a class="social-button facebook" href="https://www.facebook.com/auradecor.bigflowers/" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a class="social-button instagram" href="https://www.instagram.com/auradecor_bigflowers/" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a class="social-button mailto" href="mailto:info@aura.flowers" target="_blank"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="head-banner" id="header-section">
+        <div class="container-header">
+            <hr class="header-line">
+            <h1>Aura</h1>
+            <h2>Handmade Big Flowers & Decor</h2>
+            <a class="scroll-to button-header" id="getting-started-button" href="#about-us-section">@Localizer["Getting started"]</a>
+        </div>
+    </header>
+
+    @*<partial name="_CookieConsentPartial" />*@
+    <main role="main">
+        @RenderBody()
+    </main>
+
+    <footer id="contacts-section">
+        <div class="container-footer">
+            <div class="footer-contacts-section">
+                <div class="footer-contacts-social">
+                    <a class="social-button big facebook" href="https://www.facebook.com/auradecor.bigflowers/" target="_blank"></a>
+                    <a class="social-button big instagram" href="https://www.instagram.com/auradecor_bigflowers/" target="_blank"></a>
+                    <a class="social-button big mailto" href="mailto:info@aura.flowers" target="_blank"></a>
+                </div>
+                <h1>Let's Talk?</h1>
+                <a class="button md-trigger" data-modal="modal-12">Make an enquiry</a>
+            </div>
+
+            <div class="footer-contacts-section-address">
+                <h2>Bratislava <br><span>+421 940 936 338</span></h2>
+                <h2>Pekná cesta 19<br><span>831 52 Bratislava</span></h2>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d292.30832362130064!2d17.11564591955867!3d48.12915360908879!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c89afa7fde3ed%3A0x8c4a69e6825276be!2sYour%20Hairstylist%20-%20Vladimir%20Lekar!5e0!3m2!1sru!2ssk!4v1566932474142!5m2!1sru!2ssk"
+                    width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </footer>
+
+    <footer class="footer-company">
+        <div class="container">
+            2019 © <b>Aura.Flowers</b>, All rights reserved. Created in <a href="https://i-feature.net">i-feature</a>
+        </div>
+    </footer>
+
+    <!-- Modal windows -->
+    <div class="md-modal md-effect-12">
+        <div class="md-content">
+            <div class="md-header">
+                <h1>Let's Talk?<br><span>Let’s make something awesome togheter</span></h1>
+                <a class="md-close">Close <i class="fa fa-times"></i></a>
+            </div>
+            <form>
+                <div class="form-input-data">
+                    <p>Your name <span>*</span></p>
+                    <input class="input-text">
+                </div>
+                <div class="form-input-data">
+                    <p>Your e-mail <span>*</span></p>
+                    <input class="input-text" type="email">
+                </div>
+                <div class="form-input-data">
+                    <p>Your message <span>*</span></p>
+                    <textarea class="input-text" rows="5" cols="500"></textarea>
+                </div>
+                <div class="form-input-data">
+                    <p>Selected product</p>
+                    <select class="input-text">
+                        <option value="0">Only message - no product</option>
+                        <option value="1">Audi</option>
+                        <option value="2">BMW</option>
+                        <option value="3">Citroen</option>
+                        <option value="4">Ford</option>
+                        <option value="5">Honda</option>
+                    </select>
+                </div>
+                <button class="form-button" type="submit">Send message</button>
+            </form>
+        </div>
+    </div>
+    <div class="md-overlay"></div>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+    </environment>
+    <environment exclude="Development">
+        @*min here*@
+    </environment>
+    <script src="~/js/owl-carousel/owl.carousel.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

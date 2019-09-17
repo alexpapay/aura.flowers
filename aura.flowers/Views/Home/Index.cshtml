@@ -1,0 +1,265 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = "Main";
+}
+
+<section id="about-us-section">
+    <div class="container">
+        <hr class="header-line-1">
+        <h1>@Localizer["About Us"].</h1>
+        <h4>@Localizer["Flowers that make you happy for a long time"]</h4>
+        <div class="container-about-us-images">
+            <div class="container-about-us-big-left">
+                <div class="container-about-us-big-left-image">
+                    <div class="container-about-us-image-content">
+                        <div class="container-about-us-image-text">
+                            <h2>@Localizer["Our studio"]</h2>
+                            <p>@Localizer["Our studio_text"]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-about-us-big-right">
+                <div class="container-about-us-big-right-image-one">
+                    <div class="container-about-us-image-content">
+                        <div class="container-about-us-image-text">
+                            <h2>@Localizer["Team"]</h2>
+                            <p>@Localizer["Team_description"]</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-about-us-big-right-image-two">
+                    <div class="container-about-us-image-content">
+                        <div class="container-about-us-image-text">
+                            <h2>@Localizer["Other"]</h2>
+                            <p>@Localizer["Other_text"]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-about-us-three-columns">
+            <div>
+                <h2>@Localizer["Who we are"]</h2>
+                <p>@Localizer["Who we are_text"]</p>
+            </div>
+            <div>
+                <h2>@Localizer["How we work"]</h2>
+                <p>@Localizer["How we work_text"]</p>
+            </div>
+            <div>
+                <h2>@Localizer["Our philosophy"]</h2>
+                <p>@Localizer["Our philosophy_text"]</p>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<section id="products-section">
+    <div class="container">
+        <hr class="header-line-1">
+        <h1>@Localizer["Products"].</h1>
+        <h4>@Localizer["We work with you, not for you"]</h4>
+        <div class="container-products">
+            <div class="product-item">
+                <div class="flip">
+                    <div class="front" style="background-image: url(/img/products/01_lamps.jpg)">
+                    </div>
+                    <div class="back">
+                        <h2>Интерьерные Лампы</h2>
+                        <p>
+                            Оригинальное украшение Вашего жилища. Управление цветом при помощи пульта. Работает от батареек, что делает лампу мобильной, удобной и безопасной. Цветок-лампа создаст уют и хорошее настроение в Вашем доме.
+                        </p>
+                        <a class="product-button md-trigger">Заказать</a>
+                    </div>
+                </div>
+                <div class="product-item-header">Интерьерные Лампы</div>
+            </div>
+
+            <div class="product-item">
+                <div class="flip">
+                    <div class="front" style="background-image: url(/img/products/02_frames.jpg)">
+                    </div>
+                    <div class="back">
+                        <h2>Рамки</h2>
+                        <p>Добавьте красок в свою жизнь! Создают уютную атмосферу в доме и настраивают на позитивные мысли.</p>
+                        <a class="product-button md-trigger">Заказать</a>
+                    </div>
+                </div>
+                <div class="product-item-header">Рамки</div>
+            </div>
+            <div class="product-item">
+                <div class="flip">
+                    <div class="front" style="background-image: url(/img/products/03_bigflowers.jpg)">
+                        <h2>На заказ/Аренда</h2>
+                    </div>
+                    <div class="back">
+                        <h2>Большие цветы-композиции</h2>
+                        <p>Идеально подходит для создания необычной и волшебной обстановки. Фотозоны на мероприятиях и интерьер фотостудий, торговых и офисных помещений. </p>
+                        <a class="product-button md-trigger">Заказать</a>
+                    </div>
+                </div>
+                <div class="product-item-header">Большие цветы-композиции</div>
+            </div>
+            <div class="product-item">
+                <div class="flip">
+                    <div class="front" style="background-image: url(/img/products/04_wings.jpg)">
+                        <h2>На заказ/Аренда</h2>
+                    </div>
+                    <div class="back">
+                        <h2>Крылья</h2>
+                        <p>Идеально подходит для создания необычной и волшебной обстановки. Фотозоны на мероприятиях и интерьер фотостудий, торговых и офисных помещений.</p>
+                        <a class="product-button md-trigger">Заказать</a>
+                    </div>
+                </div>
+                <div class="product-item-header">Крылья</div>
+            </div>
+
+            <div class="product-item">
+                <div class="flip">
+                    <div class="front" style="background-image: url(/img/products/05_walls.jpg)">
+                        <h2>На заказ/Аренда</h2>
+                    </div>
+                    <div class="back">
+                        <h2>Стена</h2>
+                        <p>Идеально подходит для создания необычной и волшебной обстановки. Фотозоны на мероприятиях и интерьер фотостудий, торговых и офисных помещений. </p>
+                        <a class="product-button md-trigger">Заказать</a>
+                    </div>
+                </div>
+                <div class="product-item-header">Стена</div>
+            </div>
+            <div class="product-item">
+                <div class="flip">
+                    <div class="front" style="background-image: url(/img/products/06_material.jpg)">
+                    </div>
+                    <div class="back">
+                        <h2>Материал</h2>
+                        <p>Изолон и фом:</p>
+                        <ul>
+                            <li>Изолон - гипоаллергенный материал</li>
+                            <li>Простой уход</li>
+                            <li>Очистка водой (с осторожностью)</li>
+                            <li>Долговечный материал </li>
+                            <li>Может иметь разные цвета</li>
+                        </ul>
+                        <a class="product-button md-trigger">Заказать</a>
+                    </div>
+                </div>
+                <div class="product-item-header">Материал</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio-section">
+    <div class="container">
+        <hr class="header-line-1">
+        <h1>@Localizer["Portfolio"].</h1>
+        <h4>Things we've made</h4>
+        <div class="owl-carousel-portfolio owl-carousel owl-theme">
+            <div class="portfolio-item-outer" style="background-image: url(/img/portfolio/01.jpg) ">
+                <div class=portfolio-item-inner>
+                    <div class="portfolio-item-header">Portfolio header</div>
+                    <div class="portfolio-item-description">Portfolio description</div>
+                    <div class="portfolio-item-button">
+                        <a class="pillars-link md-trigger" href="#">Order it!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-outer" style="background-image: url(/img/portfolio/02.jpg) ">
+                <div class=portfolio-item-inner>
+                    <div class="portfolio-item-header">Portfolio header</div>
+                    <div class="portfolio-item-description">Portfolio description</div>
+                    <div class="portfolio-item-button">
+                        <a class="pillars-link md-trigger" href="#">Order it!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-outer" style="background-image: url(/img/portfolio/03.jpg) ">
+                <div class=portfolio-item-inner>
+                    <div class="portfolio-item-header">Portfolio header</div>
+                    <div class="portfolio-item-description">Portfolio description</div>
+                    <div class="portfolio-item-button">
+                        <a class="pillars-link md-trigger" href="#">Order it!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-outer" style="background-image: url(/img/portfolio/04.jpg) ">
+                <div class=portfolio-item-inner>
+                    <div class="portfolio-item-header">Portfolio header</div>
+                    <div class="portfolio-item-description">Portfolio description</div>
+                    <div class="portfolio-item-button">
+                        <a class="pillars-link md-trigger" href="#">Order it!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-outer" style="background-image: url(/img/portfolio/05.jpg) ">
+                <div class=portfolio-item-inner>
+                    <div class="portfolio-item-header">Portfolio header</div>
+                    <div class="portfolio-item-description">Portfolio description</div>
+                    <div class="portfolio-item-button">
+                        <a class="pillars-link md-trigger" href="#">Order it!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-outer" style="background-image: url(/img/portfolio/06.jpg) ">
+                <div class=portfolio-item-inner>
+                    <div class="portfolio-item-header">Portfolio header</div>
+                    <div class="portfolio-item-description">Portfolio description</div>
+                    <div class="portfolio-item-button">
+                        <a class="pillars-link md-trigger" href="#">Order it!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-outer" style="background-image: url(/img/portfolio/07.jpg) ">
+                <div class=portfolio-item-inner>
+                    <div class="portfolio-item-header">Portfolio header</div>
+                    <div class="portfolio-item-description">Portfolio description</div>
+                    <div class="portfolio-item-button">
+                        <a class="pillars-link md-trigger" href="#">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-outer" style="background-image: url(/img/portfolio/08.jpg) ">
+                <div class=portfolio-item-inner>
+                    <div class="portfolio-item-header">Portfolio header</div>
+                    <div class="portfolio-item-description">Portfolio description</div>
+                    <div class="portfolio-item-button">
+                        <a class="pillars-link md-trigger" href="#">Order</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials-section">
+    <div class="container">
+        <hr class="header-line-1">
+        <h1>@Localizer["Feedback"].</h1>
+        <h4>Find us</h4>
+        <div class="owl-carousel-testimonials owl-carousel owl-theme">
+            <div class="testimonials-container">
+                <div class="testimonials-box">
+                    <div class="image-box">
+                        <img src="/img/testimonials/1.jpg">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur autem quidem impedit excepturi ratione esse, incidunt alias dolorum voluptate quo mollitia sit temporibus officiis nostrum sapiente fuga provident nulla!</p>
+                    <h4>Aljona Kurotova<br><span>SlovakiaInvest Director</span></h4>
+                </div>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonials-box">
+                    <div class="image-box">
+                        <img src="/img/testimonials/0.jpg">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur autem quidem impedit excepturi ratione esse, incidunt alias dolorum voluptate quo mollitia sit temporibus officiis nostrum sapiente fuga provident nulla!</p>
+                    <h4>Aleksei Popovich<br><span>I-Feature CEO</span></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
