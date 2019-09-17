@@ -1,8 +1,8 @@
 .head-banner {
-    background: url(/img/head_banner.jpg);
+    background: url(/img/head_banner.png);
     background-size: 700px;
     background-repeat: no-repeat;
-    background-position: 100%;
+    background-position: 115%;
     margin: 0 auto;
     max-width: 1250px;
     opacity: 0;

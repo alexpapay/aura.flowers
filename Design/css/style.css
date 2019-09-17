@@ -66,7 +66,7 @@
 }
 
 .container-about-us-big-left-image {
-    background-image: url(/img/products/01.jpg);
+    background-image: url(/img/about/studio.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -88,7 +88,7 @@
 }
 
 .container-about-us-big-right-image-one {
-    background-image: url(/img/products/02.jpg);
+    background-image: url(/img/about/team.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -105,7 +105,7 @@
 }
 
 .container-about-us-big-right-image-two {
-    background-image: url(/img/products/03.jpg);
+    background-image: url(/img/about/wall.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
