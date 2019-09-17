@@ -775,6 +775,19 @@ nav {
 
 
 /* About us */
+.container-about-us-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+    .container-about-us-header .about-us-header-column {
+        flex: 1;
+    }
+
+    .container-about-us-header .about-us-text-column {
+        flex: 0.75;
+    }
 
 .container-about-us-images {
     padding: 0;
@@ -917,11 +930,13 @@ nav {
             background-color: rgba(255, 255, 255, 0);
             border-radius: 10px;
             text-align: center;
+            cursor: pointer;
             transition: 0.5s;
+            margin-bottom: 15px;
         }
 
             .container-products .product-item .flip .product-button:hover {
-                color: #AF3E58;
+                color: #262626;
                 border: #ffffff solid 2px;
                 background-color: rgba(255, 255, 255, 1);
             }
@@ -999,7 +1014,7 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: flex-end;
         text-align: center;
         color: white;
         width: inherit;
@@ -1016,6 +1031,19 @@ nav {
             line-height: 160%;
             color: #ffffff;
             padding: 0 15px 0 15px;
+        }
+
+        .flip > .back ul {
+            text-align: left;
+            font-size: 0.85rem;
+        }
+
+        .flip > .back .product-description-container{
+            flex-grow: 1;
+            display: flex;
+            align-items:center;
+            padding-left: 15px;
+            padding-right: 15px;
         }
 
     .flip > .front h2 {
@@ -1448,6 +1476,14 @@ nav {
 /* Media: */
 
 @media(max-width: 960px) {
+    .container-about-us-header {
+        flex-direction: column;
+    }
+
+        .container-about-us-header .about-us-text-column {
+            flex: 1;
+        }
+
     .container-about-us-images {
         flex-direction: column;
     }

@@ -120,6 +120,9 @@
   <data name="About Us" xml:space="preserve">
     <value>О Нас</value>
   </data>
+  <data name="About Us_text" xml:space="preserve">
+    <value>Хотите отличное решение для интерьера квартиры, дома, офиса и  магазина? Оно есть у нас!</value>
+  </data>
   <data name="Contacts" xml:space="preserve">
     <value>Контакты</value>
   </data>
@@ -138,11 +141,11 @@
   <data name="How we work_text" xml:space="preserve">
     <value>Мы создаем цветы и композиции из качественного материала, за которым просто и удобно ухаживать.  (Изолон, Фоам).  Предлагаем аренду наших изделий. Мы открыты к сотрудничеству и готовы творить вместе с Вами.</value>
   </data>
-  <data name="Other" xml:space="preserve">
-    <value>Другое</value>
+  <data name="OnOrder_Rental" xml:space="preserve">
+    <value>(На заказ / Аренда)</value>
   </data>
-  <data name="Other_text" xml:space="preserve">
-    <value>Другое текст</value>
+  <data name="Order_button" xml:space="preserve">
+    <value>Заказать</value>
   </data>
   <data name="Our philosophy" xml:space="preserve">
     <value>Наша философия</value>
@@ -162,11 +165,68 @@
   <data name="Products" xml:space="preserve">
     <value>Продукты</value>
   </data>
+  <data name="Product_bigflowers" xml:space="preserve">
+    <value>Большие цветы- композиции</value>
+  </data>
+  <data name="Product_bigflowers_text" xml:space="preserve">
+    <value>Идеально подходит для создания необычной и волшебной обстановки. Фотозоны на мероприятиях и интерьер фотостудий, торговых и офисных помещений.</value>
+  </data>
+  <data name="Product_framework" xml:space="preserve">
+    <value>Рамки</value>
+  </data>
+  <data name="Product_framework_text" xml:space="preserve">
+    <value>Добавьте красок в свою жизнь! Создают уютную атмосферу в доме и настраивают на позитивные мысли.</value>
+  </data>
+  <data name="Product_lamps" xml:space="preserve">
+    <value>Интерьерные Лампы</value>
+  </data>
+  <data name="Product_lamps_text" xml:space="preserve">
+    <value>Оригинальное украшение Вашего жилища.  Управление цветом при помощи пульта. Работает от батареек, что делает лампу мобильной, удобной и безопасной. Цветок-лампа создаст уют и хорошее настроение в Вашем доме.</value>
+  </data>
+  <data name="Product_Material" xml:space="preserve">
+    <value>Материал</value>
+  </data>
+  <data name="Product_Material_text" xml:space="preserve">
+    <value>Изолон и фом.</value>
+  </data>
+  <data name="Product_Material_text_1" xml:space="preserve">
+    <value>Изолон - гипоаллергенный материал</value>
+  </data>
+  <data name="Product_Material_text_2" xml:space="preserve">
+    <value>Простой уход</value>
+  </data>
+  <data name="Product_Material_text_3" xml:space="preserve">
+    <value>При очистке можно воспользоваться душем (с осторожностью)</value>
+  </data>
+  <data name="Product_Material_text_4" xml:space="preserve">
+    <value>Долговечный материал</value>
+  </data>
+  <data name="Product_Material_text_5" xml:space="preserve">
+    <value>Может иметь разные цвета</value>
+  </data>
+  <data name="Product_Wall" xml:space="preserve">
+    <value>Стена</value>
+  </data>
+  <data name="Product_Wall_text" xml:space="preserve">
+    <value>Идеально подходит для создания необычной и волшебной обстановки. Фотозоны на мероприятиях и интерьер фотостудий, торговых и офисных помещений.</value>
+  </data>
+  <data name="Product_Wings" xml:space="preserve">
+    <value>Крылья</value>
+  </data>
+  <data name="Product_Wings_text" xml:space="preserve">
+    <value>Тренд дизайнерских решений и фотосессий. Идеально подчеркнет выбранный образ.</value>
+  </data>
   <data name="Team" xml:space="preserve">
     <value>Команда</value>
   </data>
   <data name="Team_description" xml:space="preserve">
     <value>Мы создаем свет</value>
+  </data>
+  <data name="Walls" xml:space="preserve">
+    <value>Стены</value>
+  </data>
+  <data name="Walls_text" xml:space="preserve">
+    <value>Мы делаем стены</value>
   </data>
   <data name="We work with you, not for you" xml:space="preserve">
     <value>Мы работаем с тобой, а не для тебя</value>

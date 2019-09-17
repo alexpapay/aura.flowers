@@ -120,6 +120,9 @@
   <data name="About Us" xml:space="preserve">
     <value>About Us</value>
   </data>
+  <data name="About Us_text" xml:space="preserve">
+    <value>Are you looking for a great solution for the interior of your flat, house, office or shop? We have it!</value>
+  </data>
   <data name="Contacts" xml:space="preserve">
     <value>Contacts</value>
   </data>
@@ -138,11 +141,11 @@
   <data name="How we work_text" xml:space="preserve">
     <value>We create flowers and compositions from high-quality material, which is easy and convenient to care for. (Isolon, Foam). We offer rental of our products. We are open to cooperation and are ready to create with you.</value>
   </data>
-  <data name="Other" xml:space="preserve">
-    <value>Other</value>
+  <data name="OnOrder_Rental" xml:space="preserve">
+    <value>(On order / Rental)</value>
   </data>
-  <data name="Other_text" xml:space="preserve">
-    <value>Other text</value>
+  <data name="Order_button" xml:space="preserve">
+    <value>Order</value>
   </data>
   <data name="Our philosophy" xml:space="preserve">
     <value>Our philosophy</value>
@@ -162,11 +165,68 @@
   <data name="Products" xml:space="preserve">
     <value>Products</value>
   </data>
+  <data name="Product_bigflowers" xml:space="preserve">
+    <value>Big flowers - compositions</value>
+  </data>
+  <data name="Product_bigflowers_text" xml:space="preserve">
+    <value>Ideal for creating an unusual and magical setting. Photo zones at events and the interior of photo studios, retail and office premises.</value>
+  </data>
+  <data name="Product_framework" xml:space="preserve">
+    <value>The framework</value>
+  </data>
+  <data name="Product_framework_text" xml:space="preserve">
+    <value>Add color to your life! Create a cozy atmosphere in the house and set up for positive thoughts.</value>
+  </data>
+  <data name="Product_lamps" xml:space="preserve">
+    <value>Interior Lamps</value>
+  </data>
+  <data name="Product_lamps_text" xml:space="preserve">
+    <value>The original decoration of your home. You will easily change the color of your lamp with a remote control. Powered by batteries, which makes the lamp mobile, convenient and safe. The flower lamp will create comfort and good mood in your home.</value>
+  </data>
+  <data name="Product_Material" xml:space="preserve">
+    <value>Material</value>
+  </data>
+  <data name="Product_Material_text" xml:space="preserve">
+    <value>Isolon and foam.</value>
+  </data>
+  <data name="Product_Material_text_1" xml:space="preserve">
+    <value>Isolon is a hypoallergenic material</value>
+  </data>
+  <data name="Product_Material_text_2" xml:space="preserve">
+    <value>Easy care</value>
+  </data>
+  <data name="Product_Material_text_3" xml:space="preserve">
+    <value>You can use a water for cleaning (but with caution!)</value>
+  </data>
+  <data name="Product_Material_text_4" xml:space="preserve">
+    <value>Durable material</value>
+  </data>
+  <data name="Product_Material_text_5" xml:space="preserve">
+    <value>It may have different colors</value>
+  </data>
+  <data name="Product_Wall" xml:space="preserve">
+    <value>Wall</value>
+  </data>
+  <data name="Product_Wall_text" xml:space="preserve">
+    <value>Ideal for creating an unusual and magical setting. Photo zones at events and the interior of photo studios, retail and office premises.</value>
+  </data>
+  <data name="Product_Wings" xml:space="preserve">
+    <value>Wings</value>
+  </data>
+  <data name="Product_Wings_text" xml:space="preserve">
+    <value>The trend of design decisions and photo shoots. Will make a good emphasis on the chosen style.</value>
+  </data>
   <data name="Team" xml:space="preserve">
     <value>Team</value>
   </data>
   <data name="Team_description" xml:space="preserve">
     <value>We create here light</value>
+  </data>
+  <data name="Walls" xml:space="preserve">
+    <value>Walls</value>
+  </data>
+  <data name="Walls_text" xml:space="preserve">
+    <value>We create walls</value>
   </data>
   <data name="We work with you, not for you" xml:space="preserve">
     <value>We work with you, not for you</value>
