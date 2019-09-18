@@ -1,7 +1,4 @@
-﻿@using Microsoft.AspNetCore.Mvc.Localization
-@inject IViewLocalizer Localizer
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -38,6 +35,7 @@
                     <li><a class="scroll-to" href="#portfolio-section">@Localizer["Portfolio"]</a></li>
                     <li><a class="scroll-to" href="#testimonials-section">@Localizer["Feedback"]</a></li>
                     <li><a class="scroll-to" href="#contacts-section">@Localizer["Contacts"]</a></li>
+                    <li>@await Html.PartialAsync("_SelectLanguagePartial")</li>
                 </ul>
             </div>
 

@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using System.Globalization;
 
 namespace aura.flowers
@@ -32,6 +33,19 @@ namespace aura.flowers
             services.AddMvc()
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
                 .AddViewLocalization();
+            services.Configure<RequestLocalizationOptions>(options =>
+            {
+                CultureInfo[] supportedCultures = new[]
+                {
+                    new CultureInfo("en"),
+                    new CultureInfo("de"),
+                    new CultureInfo("ru")
+                };
+
+                options.DefaultRequestCulture = new RequestCulture("ru");
+                options.SupportedCultures = supportedCultures;
+                options.SupportedUICultures = supportedCultures;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,18 +62,9 @@ namespace aura.flowers
                 app.UseHsts();
             }
 
-            CultureInfo[] supportedCultures = new[]
-            {
-                new CultureInfo("en"),
-                new CultureInfo("ru"),
-                new CultureInfo("de")
-            };
-            app.UseRequestLocalization(new RequestLocalizationOptions
-            {
-                DefaultRequestCulture = new RequestCulture("ru"),
-                SupportedCultures = supportedCultures,
-                SupportedUICultures = supportedCultures
-            });
+            IOptions<RequestLocalizationOptions> localizeOptions = 
+                app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>();
+            app.UseRequestLocalization(localizeOptions.Value);
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();

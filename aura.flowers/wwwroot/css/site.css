@@ -28,7 +28,6 @@ a {
 
 
 /* Input forms */
-
 .form-input-data p {
     font-weight: bold;
     text-decoration: none;
@@ -322,13 +321,32 @@ nav {
                         transition: 1.0s;
                     }
 
+                nav .menu ul li select {
+                    transition: 1.0s;
+                    font-size: 18px;
+                    line-height: 0px;
+                    padding: 12px 12px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color: #AF3E58;
+                    border: 0;
+                    background-color: #ffffff00;
+                    font-family: inherit;
+                    outline: 0px;
+                }
+
+                    nav .menu ul li select:focus {
+                        outline: none;
+                    }
+
     nav .social {
         flex: 0;
     }
 
         nav .social ul {
             display: flex;
-            flex-basis: content;
+            flex-basis: auto;
             margin: 0;
             padding: 0;
         }
@@ -437,6 +455,11 @@ nav {
                     border-bottom: solid 0px;
                 }
 
+            nav .menu ul li select {
+                font-size: 2.0em;
+                width: auto;
+            }
+
     nav .social {
         flex: 0 auto;
         display: none;
@@ -456,11 +479,11 @@ nav {
     }
 
     .social .social-button {
-        width: 6.0rem;
-        height: 6.0rem;
+        width: 4.0rem;
+        height: 4.0rem;
         line-height: 1.8em;
-        font-size: 3.25rem;
-        margin: 30px;
+        font-size: 2.25rem;
+        margin: 15px;
     }
 }
 
@@ -580,19 +603,18 @@ nav {
 
 
 /* Animations */
-
 .loaded .head-banner {
-    -webkit-animation: opacityIn 2.0s ease-in-out 0s forwards;
-    -moz-animation: opacityIn 2.0s ease-in-out 0s forwards;
-    -o-animation: opacityIn 2.0s ease-in-out 0s forwards;
-    animation: opacityIn 2.0s ease-in-out 0s forwards;
+    -webkit-animation: opacityIn 2.0s ease-in-out 0.0s forwards;
+    -moz-animation: opacityIn 2.0s ease-in-out 0.0s forwards;
+    -o-animation: opacityIn 2.0s ease-in-out 0.0s forwards;
+    animation: opacityIn 2.0s ease-in-out 0.0s forwards;
 }
 
     .loaded .head-banner::after {
-        -webkit-animation: scaleIn 1.3s ease-in-out 1.5s forwards;
-        -moz-animation: scaleIn 1.3s ease-in-out 1.5s forwards;
-        -o-animation: scaleIn 1.3s ease-in-out 1.5s forwards;
-        animation: scaleIn 1.3s ease-in-out 1.5s forwards;
+        -webkit-animation: scaleIn 1.3s ease-in-out 0.5s forwards;
+        -moz-animation: scaleIn 1.3s ease-in-out 0.5s forwards;
+        -o-animation: scaleIn 1.3s ease-in-out 0.5s forwards;
+        animation: scaleIn 1.3s ease-in-out 0.5s forwards;
     }
 
     .loaded .head-banner .header-line {
@@ -603,66 +625,73 @@ nav {
     }
 
 .loaded .container-header h1 {
-    -webkit-animation: onYAxisOpacity 0.3s ease-in-out 2.0s forwards;
-    -moz-animation: onYAxisOpacity 0.3s ease-in-out 2.0s forwards;
-    -o-animation: onYAxisOpacity 0.3s ease-in-out 2.0s forwards;
-    animation: onYAxisOpacity 0.3s ease-in-out 2.0s forwards;
+    -webkit-animation: onYAxisOpacity 0.3s ease-in-out 1.0s forwards;
+    -moz-animation: onYAxisOpacity 0.3s ease-in-out 1.0s forwards;
+    -o-animation: onYAxisOpacity 0.3s ease-in-out 1.0s forwards;
+    animation: onYAxisOpacity 0.3s ease-in-out 1.0s forwards;
 }
 
 .loaded .container-header h2 {
-    -webkit-animation: onYAxisOpacity 0.3s ease-in-out 2.25s forwards;
-    -moz-animation: onYAxisOpacity 0.3s ease-in-out 2.25s forwards;
-    -o-animation: onYAxisOpacity 0.3s ease-in-out 2.25s forwards;
-    animation: onYAxisOpacity 0.3s ease-in-out 2.25s forwards;
+    -webkit-animation: onYAxisOpacity 0.3s ease-in-out 1.25s forwards;
+    -moz-animation: onYAxisOpacity 0.3s ease-in-out 1.25s forwards;
+    -o-animation: onYAxisOpacity 0.3s ease-in-out 1.25s forwards;
+    animation: onYAxisOpacity 0.3s ease-in-out 1.25s forwards;
 }
 
 .loaded .container-header .button-header {
-    -webkit-animation: onYAxisOpacity 0.3s ease-in-out 2.75s forwards;
-    -moz-animation: onYAxisOpacity 0.3s ease-in-out 2.75s forwards;
-    -o-animation: onYAxisOpacity 0.3s ease-in-out 2.75s forwards;
-    animation: onYAxisOpacity 0.3s ease-in-out 2.75s forwards;
+    -webkit-animation: onYAxisOpacity 0.3s ease-in-out 1.75s forwards;
+    -moz-animation: onYAxisOpacity 0.3s ease-in-out 1.75s forwards;
+    -o-animation: onYAxisOpacity 0.3s ease-in-out 1.75s forwards;
+    animation: onYAxisOpacity 0.3s ease-in-out 1.75s forwards;
 }
 
-.loaded nav .menu ul li:nth-child(5) {
+.loaded nav .menu ul li:nth-child(6) {
     -webkit-animation: onXAxisOpacity 0.3s ease-in-out 1.0s forwards;
     -moz-animation: onXAxisOpacity 0.3s ease-in-out 1.0s forwards;
     -o-animation: onXAxisOpacity 0.3s ease-in-out 1.0s forwards;
     animation: onXAxisOpacity 0.3s ease-in-out 1.0s forwards;
 }
 
-.loaded nav .menu ul li:nth-child(4) {
+.loaded nav .menu ul li:nth-child(5) {
     -webkit-animation: onXAxisOpacity 0.3s ease-in-out 1.3s forwards;
     -moz-animation: onXAxisOpacity 0.3s ease-in-out 1.3s forwards;
     -o-animation: onXAxisOpacity 0.3s ease-in-out 1.3s forwards;
     animation: onXAxisOpacity 0.3s ease-in-out 1.3s forwards;
 }
 
-.loaded nav .menu ul li:nth-child(3) {
+.loaded nav .menu ul li:nth-child(4) {
     -webkit-animation: onXAxisOpacity 0.3s ease-in-out 1.6s forwards;
     -moz-animation: onXAxisOpacity 0.3s ease-in-out 1.6s forwards;
     -o-animation: onXAxisOpacity 0.3s ease-in-out 1.6s forwards;
     animation: onXAxisOpacity 0.3s ease-in-out 1.6s forwards;
 }
 
-.loaded nav .menu ul li:nth-child(2) {
+.loaded nav .menu ul li:nth-child(3) {
     -webkit-animation: onXAxisOpacity 0.3s ease-in-out 1.9s forwards;
     -moz-animation: onXAxisOpacity 0.3s ease-in-out 1.9s forwards;
     -o-animation: onXAxisOpacity 0.3s ease-in-out 1.9s forwards;
     animation: onXAxisOpacity 0.3s ease-in-out 1.9s forwards;
 }
 
-.loaded nav .menu ul li:nth-child(1) {
+.loaded nav .menu ul li:nth-child(2) {
     -webkit-animation: onXAxisOpacity 0.3s ease-in-out 2.2s forwards;
     -moz-animation: onXAxisOpacity 0.3s ease-in-out 2.2s forwards;
     -o-animation: onXAxisOpacity 0.3s ease-in-out 2.2s forwards;
     animation: onXAxisOpacity 0.3s ease-in-out 2.2s forwards;
 }
 
+.loaded nav .menu ul li:nth-child(1) {
+    -webkit-animation: onXAxisOpacity 0.3s ease-in-out 2.5s forwards;
+    -moz-animation: onXAxisOpacity 0.3s ease-in-out 2.5s forwards;
+    -o-animation: onXAxisOpacity 0.3s ease-in-out 2.5s forwards;
+    animation: onXAxisOpacity 0.3s ease-in-out 2.5s forwards;
+}
+
 .loaded nav .logo {
-    -webkit-animation: opacityIn 1.0s ease-in-out 2.5s forwards;
-    -moz-animation: opacityIn 1.0s ease-in-out 2.5s forwards;
-    -o-animation: opacityIn 1.0s ease-in-out 2.5s forwards;
-    animation: opacityIn 1.0s ease-in-out 2.5s forwards;
+    -webkit-animation: opacityIn 1.0s ease-in-out 2.8s forwards;
+    -moz-animation: opacityIn 1.0s ease-in-out 2.8s forwards;
+    -o-animation: opacityIn 1.0s ease-in-out 2.8s forwards;
+    animation: opacityIn 1.0s ease-in-out 2.8s forwards;
 }
 
 .loaded nav .social ul li:nth-child(1) {
@@ -726,7 +755,6 @@ nav {
 }
 
 /* Content: */
-
 .container {
     width: 85%;
     margin: 0 auto;
@@ -1038,10 +1066,10 @@ nav {
             font-size: 0.85rem;
         }
 
-        .flip > .back .product-description-container{
+        .flip > .back .product-description-container {
             flex-grow: 1;
             display: flex;
-            align-items:center;
+            align-items: center;
             padding-left: 15px;
             padding-right: 15px;
         }
