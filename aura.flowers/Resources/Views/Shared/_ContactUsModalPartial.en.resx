@@ -117,19 +117,49 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="menu-about-us" xml:space="preserve">
-    <value>О Нас</value>
+  <data name="contact-us-email" xml:space="preserve">
+    <value>Your Email</value>
   </data>
-  <data name="menu-contacts" xml:space="preserve">
-    <value>Контакты</value>
+  <data name="contact-us-message" xml:space="preserve">
+    <value>Your Message</value>
   </data>
-  <data name="menu-feedback" xml:space="preserve">
-    <value>Отзывы</value>
+  <data name="contact-us-name" xml:space="preserve">
+    <value>Your Name</value>
   </data>
-  <data name="menu-portfolio" xml:space="preserve">
-    <value>Портфолио</value>
+  <data name="contact-us-product" xml:space="preserve">
+    <value>Selected Product</value>
   </data>
-  <data name="menu-products" xml:space="preserve">
-    <value>Продукты</value>
+  <data name="contact-us-product-bigflowers" xml:space="preserve">
+    <value>Big Flowers - Compositions</value>
+  </data>
+  <data name="contact-us-product-framework" xml:space="preserve">
+    <value>The Framework</value>
+  </data>
+  <data name="contact-us-product-lamps" xml:space="preserve">
+    <value>Interior Lamps</value>
+  </data>
+  <data name="contact-us-product-material" xml:space="preserve">
+    <value>Source Material</value>
+  </data>
+  <data name="contact-us-product-select" xml:space="preserve">
+    <value>--- Select product from list ---</value>
+  </data>
+  <data name="contact-us-product-walls" xml:space="preserve">
+    <value>Wall</value>
+  </data>
+  <data name="contact-us-product-wings" xml:space="preserve">
+    <value>Wings</value>
+  </data>
+  <data name="contact-us-send" xml:space="preserve">
+    <value>Send Message</value>
+  </data>
+  <data name="contact-us-subtitle" xml:space="preserve">
+    <value>Let’s make something awesome togheter</value>
+  </data>
+  <data name="contact-us-title" xml:space="preserve">
+    <value>Let's Talk?</value>
+  </data>
+  <data name="contact-us-title-close" xml:space="preserve">
+    <value>Close</value>
   </data>
 </root>

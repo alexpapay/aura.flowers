@@ -117,19 +117,49 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="menu-about-us" xml:space="preserve">
-    <value>О Нас</value>
+  <data name="about-us-how-we-work-header" xml:space="preserve">
+    <value>How We Work</value>
   </data>
-  <data name="menu-contacts" xml:space="preserve">
-    <value>Контакты</value>
+  <data name="about-us-how-we-work-text" xml:space="preserve">
+    <value>We create flowers and compositions from high-quality material, which is easy and convenient to care for. (Isolon, Foam). We offer rental of our products. We are open to cooperation and are ready to create with you.</value>
   </data>
-  <data name="menu-feedback" xml:space="preserve">
-    <value>Отзывы</value>
+  <data name="about-us-our-philosophy-header" xml:space="preserve">
+    <value>Our Philosophy</value>
   </data>
-  <data name="menu-portfolio" xml:space="preserve">
-    <value>Портфолио</value>
+  <data name="about-us-our-philosophy-text" xml:space="preserve">
+    <value>To give joy and good mood! Nothing is impossible. We are always glad to see you and ready to realize your interior fantasies. Each item is made with love.</value>
   </data>
-  <data name="menu-products" xml:space="preserve">
-    <value>Продукты</value>
+  <data name="about-us-our-studio-header" xml:space="preserve">
+    <value>Our Studio</value>
+  </data>
+  <data name="about-us-our-studio-text" xml:space="preserve">
+    <value>Workshop and showroom</value>
+  </data>
+  <data name="about-us-our-team-header" xml:space="preserve">
+    <value>Team</value>
+  </data>
+  <data name="about-us-our-team-text" xml:space="preserve">
+    <value>Professionals who love their work</value>
+  </data>
+  <data name="about-us-our-walls-header" xml:space="preserve">
+    <value>Foto Walls</value>
+  </data>
+  <data name="about-us-our-walls-text" xml:space="preserve">
+    <value>Big foto walls with our flowers</value>
+  </data>
+  <data name="about-us-subtitle" xml:space="preserve">
+    <value>Flowers that make you happy for a long time</value>
+  </data>
+  <data name="about-us-title" xml:space="preserve">
+    <value>About Us</value>
+  </data>
+  <data name="about-us-title-text" xml:space="preserve">
+    <value>Are you looking for a great solution for the interior of your flat, house, office or shop? We have it!</value>
+  </data>
+  <data name="about-us-who-we-are-header" xml:space="preserve">
+    <value>Who We Are</value>
+  </data>
+  <data name="about-us-who-we-are-text" xml:space="preserve">
+    <value>We are AuraDecor Interior Studio in Bratislava! We specialize in decorating of events and spaces  for any purpose. We make wonderful big compositions.</value>
   </data>
 </root>

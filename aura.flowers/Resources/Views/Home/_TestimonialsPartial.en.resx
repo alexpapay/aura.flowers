@@ -117,19 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="menu-about-us" xml:space="preserve">
-    <value>О Нас</value>
+  <data name="testimonials-subtitle" xml:space="preserve">
+    <value>From all over the world</value>
   </data>
-  <data name="menu-contacts" xml:space="preserve">
-    <value>Контакты</value>
-  </data>
-  <data name="menu-feedback" xml:space="preserve">
-    <value>Отзывы</value>
-  </data>
-  <data name="menu-portfolio" xml:space="preserve">
-    <value>Портфолио</value>
-  </data>
-  <data name="menu-products" xml:space="preserve">
-    <value>Продукты</value>
+  <data name="testimonials-title" xml:space="preserve">
+    <value>What Clients Say</value>
   </data>
 </root>

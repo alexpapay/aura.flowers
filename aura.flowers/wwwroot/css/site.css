@@ -255,6 +255,54 @@ form .form-button {
             border-color: #AF3E58;
         }
 
+    .social-button.viber {
+        color: #AF3E58;
+        border-color: #AF3E58;
+    }
+
+        .social-button.viber:before {
+            content: "\f409";
+            font-family: 'Font Awesome 5 Brands';
+        }
+
+        .social-button.viber:hover,
+        .social-button.viber:focus {
+            color: #AF3E58;
+            border-color: #AF3E58;
+        }
+
+    .social-button.telegram {
+        color: #AF3E58;
+        border-color: #AF3E58;
+    }
+
+        .social-button.telegram:before {
+            content: "\f3fe";
+            font-family: 'Font Awesome 5 Brands';
+        }
+
+        .social-button.telegram:hover,
+        .social-button.telegram:focus {
+            color: #AF3E58;
+            border-color: #AF3E58;
+        }
+
+    .social-button.whatsup {
+        color: #AF3E58;
+        border-color: #AF3E58;
+    }
+
+        .social-button.whatsup:before {
+            content: "\f232";
+            font-family: 'Font Awesome 5 Brands';
+        }
+
+        .social-button.whatsup:hover,
+        .social-button.whatsup:focus {
+            color: #AF3E58;
+            border-color: #AF3E58;
+        }
+
 nav {
     position: fixed;
     width: 100%;
@@ -325,7 +373,7 @@ nav {
                     transition: 1.0s;
                     font-size: 18px;
                     line-height: 0px;
-                    padding: 12px 12px;
+                    padding: 12.25px 12.25px;
                     text-decoration: none;
                     text-transform: uppercase;
                     font-weight: bold;
@@ -446,7 +494,7 @@ nav {
         }
 
             nav .menu ul li a {
-                font-size: 2.0em;
+                font-size: 2.0rem;
             }
 
                 nav .menu ul li a.active,
@@ -479,11 +527,11 @@ nav {
     }
 
     .social .social-button {
-        width: 4.0rem;
-        height: 4.0rem;
-        line-height: 1.8em;
-        font-size: 2.25rem;
-        margin: 15px;
+        width: 3.0rem;
+        height: 3.0rem;
+        line-height: 1.6em;
+        font-size: 1.9rem;
+        margin: 5px;
     }
 }
 
@@ -491,7 +539,7 @@ nav {
     background: url(/img/head_banner.png);
     background-size: 700px;
     background-repeat: no-repeat;
-    background-position: 115%;
+    background-position: 100%;
     margin: 0 auto;
     max-width: 1250px;
     opacity: 0;
@@ -715,6 +763,20 @@ nav {
     animation: scaleInRotateIn 0.3s ease-in-out 1.6s forwards;
 }
 
+.loaded nav .social ul li:nth-child(4) {
+    -webkit-animation: scaleInRotateIn 0.3s ease-in-out 1.9s forwards;
+    -moz-animation: scaleInRotateIn 0.3s ease-in-out 1.9s forwards;
+    -o-animation: scaleInRotateIn 0.3s ease-in-out 1.9s forwards;
+    animation: scaleInRotateIn 0.3s ease-in-out 1.9s forwards;
+}
+
+.loaded nav .social ul li:nth-child(5) {
+    -webkit-animation: scaleInRotateIn 0.3s ease-in-out 2.2s forwards;
+    -moz-animation: scaleInRotateIn 0.3s ease-in-out 2.2s forwards;
+    -o-animation: scaleInRotateIn 0.3s ease-in-out 2.2s forwards;
+    animation: scaleInRotateIn 0.3s ease-in-out 2.2s forwards;
+}
+
 @keyframes opacityIn {
     100% {
         opacity: 1;
@@ -777,11 +839,11 @@ nav {
 
 .container h4 {
     text-align: left;
-    font-size: 1.0em;
+    font-size: 1.2em;
     padding: 0 0 25px 0;
     margin: 0;
     color: #E9204F;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .container p {
@@ -946,6 +1008,7 @@ nav {
             color: #262626;
             text-align: center;
             padding-bottom: 25px;
+            text-transform: capitalize;
         }
 
         .container-products .product-item .flip .product-button {
@@ -1078,6 +1141,7 @@ nav {
         width: 100%;
         background-color: #1616166e;
         padding: 10px 0 10px 0;
+        text-transform: capitalize;
     }
 
     .flip > .back h2 {
@@ -1150,20 +1214,22 @@ nav {
 
 .portfolio-item-header {
     flex: 0 auto;
-    flex-basis: content;
     font-size: 2.0em;
     font-weight: bold;
     padding-top: 1.5em;
+    text-transform: capitalize;
 }
 
 .portfolio-item-description {
     flex: 1;
+    padding: 15px 25px 0 25px;
 }
 
 .portfolio-item-button {
     flex: 0 auto;
     padding: 0.5em;
     margin-bottom: 0.5em;
+    cursor: pointer;
 }
 
     .portfolio-item-button a {
@@ -1315,15 +1381,12 @@ nav {
     align-content: center;
 }
 
-    .footer-contacts-social .social-button.facebook {
-        color: #ffffff;
-    }
-
-    .footer-contacts-social .social-button.instagram {
-        color: #ffffff;
-    }
-
-    .footer-contacts-social .social-button.mailto {
+    .footer-contacts-social .social-button.facebook,
+    .footer-contacts-social .social-button.instagram,
+    .footer-contacts-social .social-button.mailto,
+    .footer-contacts-social .social-button.viber,
+    .footer-contacts-social .social-button.telegram,
+    .footer-contacts-social .social-button.whatsup {
         color: #ffffff;
     }
 
@@ -1369,12 +1432,14 @@ nav {
     text-align: center;
 }
 
-    .footer-company p {
-        margin-block-start: 0;
-    }
-
     .footer-company a {
         color: #cccccc;
+    }
+
+    .footer-company .footer-company-data {
+        color: #cccccc;
+        padding-top: 10px;
+        font-size: 0.6rem;
     }
 
 .footer-address {
@@ -1420,6 +1485,7 @@ nav {
         margin-top: 1.5em;
         font-size: 2.5em;
         line-height: 0.75em;
+        text-transform: capitalize;
     }
 
         .md-header h1 span {
@@ -1427,6 +1493,7 @@ nav {
             font-size: 1.0rem;
             color: #858585;
             line-height: 0px;
+            text-transform: capitalize;
         }
 
     .md-header a {

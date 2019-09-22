@@ -117,19 +117,67 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="menu-about-us" xml:space="preserve">
-    <value>О Нас</value>
+  <data name="products-bigflowers-description" xml:space="preserve">
+    <value>Ideal for creating an unusual and magical setting. Photo zones at events and the interior of photo studios, retail and office premises.</value>
   </data>
-  <data name="menu-contacts" xml:space="preserve">
-    <value>Контакты</value>
+  <data name="products-bigflowers-header" xml:space="preserve">
+    <value>Big flowers - compositions</value>
   </data>
-  <data name="menu-feedback" xml:space="preserve">
-    <value>Отзывы</value>
+  <data name="products-framework-description" xml:space="preserve">
+    <value>Add color to your life! Create a cozy atmosphere in the house and set up for positive thoughts.</value>
   </data>
-  <data name="menu-portfolio" xml:space="preserve">
-    <value>Портфолио</value>
+  <data name="products-framework-header" xml:space="preserve">
+    <value>The framework</value>
   </data>
-  <data name="menu-products" xml:space="preserve">
-    <value>Продукты</value>
+  <data name="products-lamps-description" xml:space="preserve">
+    <value>The original decoration of your home. You will easily change the color of your lamp with a remote control. Powered by batteries, which makes the lamp mobile, convenient and safe. The flower lamp will create comfort and good mood in your home.</value>
+  </data>
+  <data name="products-lamps-header" xml:space="preserve">
+    <value>Interior Lamps</value>
+  </data>
+  <data name="products-material-description" xml:space="preserve">
+    <value>Isolon and foam.</value>
+  </data>
+  <data name="products-material-description-1" xml:space="preserve">
+    <value>Isolon is a hypoallergenic material</value>
+  </data>
+  <data name="products-material-description-2" xml:space="preserve">
+    <value>Easy care</value>
+  </data>
+  <data name="products-material-description-3" xml:space="preserve">
+    <value>You can use a water for cleaning (but with caution!)</value>
+  </data>
+  <data name="products-material-description-4" xml:space="preserve">
+    <value>Durable material</value>
+  </data>
+  <data name="products-material-description-5" xml:space="preserve">
+    <value>It may have different colors</value>
+  </data>
+  <data name="products-material-header" xml:space="preserve">
+    <value>Source material</value>
+  </data>
+  <data name="products-order-button" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="products-order-rental-sticker" xml:space="preserve">
+    <value>(On order / Rental)</value>
+  </data>
+  <data name="products-subtitle" xml:space="preserve">
+    <value>We work for you</value>
+  </data>
+  <data name="products-title" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="products-walls-description" xml:space="preserve">
+    <value>Ideal for creating an unusual and magical setting. Photo zones at events and the interior of photo studios, retail and office premises.</value>
+  </data>
+  <data name="products-walls-header" xml:space="preserve">
+    <value>Wall</value>
+  </data>
+  <data name="products-wings-description" xml:space="preserve">
+    <value>The trend of design decisions and photo shoots. Will make a good emphasis on the chosen style.</value>
+  </data>
+  <data name="products-wings-header" xml:space="preserve">
+    <value>Wings</value>
   </data>
 </root>

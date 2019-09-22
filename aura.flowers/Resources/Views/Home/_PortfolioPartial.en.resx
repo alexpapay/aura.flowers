@@ -117,19 +117,61 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="menu-about-us" xml:space="preserve">
-    <value>О Нас</value>
+  <data name="portfolio-item-description-1" xml:space="preserve">
+    <value>It will give a feeling of calm and tranquility.</value>
   </data>
-  <data name="menu-contacts" xml:space="preserve">
-    <value>Контакты</value>
+  <data name="portfolio-item-description-2" xml:space="preserve">
+    <value>A delicate and bright flower will decorate any room.</value>
   </data>
-  <data name="menu-feedback" xml:space="preserve">
-    <value>Отзывы</value>
+  <data name="portfolio-item-description-3" xml:space="preserve">
+    <value>A bright element in the interior cheers up.</value>
   </data>
-  <data name="menu-portfolio" xml:space="preserve">
-    <value>Портфолио</value>
+  <data name="portfolio-item-description-4" xml:space="preserve">
+    <value>Fairytale flower for princesses.</value>
   </data>
-  <data name="menu-products" xml:space="preserve">
-    <value>Продукты</value>
+  <data name="portfolio-item-description-5" xml:space="preserve">
+    <value>Will create coziness and comfort in your home.</value>
+  </data>
+  <data name="portfolio-item-description-6" xml:space="preserve">
+    <value>Add beauty and poetry to your interior.</value>
+  </data>
+  <data name="portfolio-item-description-7" xml:space="preserve">
+    <value>New Year's decor.</value>
+  </data>
+  <data name="portfolio-item-description-8" xml:space="preserve">
+    <value>Symbol of greatness and power of life.</value>
+  </data>
+  <data name="portfolio-item-header-1" xml:space="preserve">
+    <value>Sea mood</value>
+  </data>
+  <data name="portfolio-item-header-2" xml:space="preserve">
+    <value>Camellia</value>
+  </data>
+  <data name="portfolio-item-header-3" xml:space="preserve">
+    <value>Pineapple Lamp</value>
+  </data>
+  <data name="portfolio-item-header-4" xml:space="preserve">
+    <value>Fuchsia</value>
+  </data>
+  <data name="portfolio-item-header-5" xml:space="preserve">
+    <value>Peony Lamp</value>
+  </data>
+  <data name="portfolio-item-header-6" xml:space="preserve">
+    <value>Gerbera</value>
+  </data>
+  <data name="portfolio-item-header-7" xml:space="preserve">
+    <value>Cone</value>
+  </data>
+  <data name="portfolio-item-header-8" xml:space="preserve">
+    <value>Dahlia</value>
+  </data>
+  <data name="portfolio-item-order-button" xml:space="preserve">
+    <value>Order it!</value>
+  </data>
+  <data name="portfolio-subtitle" xml:space="preserve">
+    <value>Things we've made</value>
+  </data>
+  <data name="portfolio-title" xml:space="preserve">
+    <value>Portfolio</value>
   </data>
 </root>

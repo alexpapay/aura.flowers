@@ -38,7 +38,8 @@ namespace aura.flowers
                 CultureInfo[] supportedCultures = new[]
                 {
                     new CultureInfo("en"),
-                    new CultureInfo("de"),
+                    //new CultureInfo("de"),
+                    //new CultureInfo("sk"),
                     new CultureInfo("ru")
                 };
 
