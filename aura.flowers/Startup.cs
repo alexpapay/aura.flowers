@@ -35,8 +35,7 @@ namespace aura.flowers
                 .AddViewLocalization();
             services.Configure<RequestLocalizationOptions>(options =>
             {
-                CultureInfo[] supportedCultures = new[]
-                {
+                CultureInfo[] supportedCultures = {
                     new CultureInfo("en"),
                     //new CultureInfo("de"),
                     //new CultureInfo("sk"),
