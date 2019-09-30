@@ -6,8 +6,10 @@ using Microsoft.AspNetCore.Http;
 using System;
 using aura.flowers.Utils;
 using MailKit.Net.Smtp;
+using MailKit.Security;
 using Microsoft.Extensions.Options;
 using MimeKit;
+using MimeKit.Text;
 
 namespace aura.flowers.Controllers
 {
@@ -65,28 +67,29 @@ namespace aura.flowers.Controllers
         {
             MimeMessage message = new MimeMessage();
 
-            message.From.Add(new MailboxAddress("Contact Us form", "website@aura.flowers"));
-            message.To.Add(new MailboxAddress("Aura.Flowers manager", "info@aura.flowers"));
+            message.From.Add(
+                new MailboxAddress("Contact Us form", _applicationSettings.MailConfiguration.MailFrom));
+            message.To.Add(
+                new MailboxAddress("Aura.Flowers manager", _applicationSettings.MailConfiguration.MailTo));
+
             message.Subject = "Aura.Flowers order from site on" +
                               (model.SelectedProductId != 0 ? $"for product type {(ProductTypes)model.SelectedProductId}" :
                                   string.Empty);
 
-            BodyBuilder bodyBuilder = new BodyBuilder
+            message.Body = new TextPart(TextFormat.Html)
             {
-                HtmlBody = "<h1>Good day, manager!</h1>",
-                TextBody = $"{model.Name} is interested of your web site." +
-                           (model.SelectedProductId != 0 ? $" Selected product type {(ProductTypes)model.SelectedProductId}." :
-                               string.Empty) +
-                           $" User e-mail: {model.Email}. And message was: {model.Message}"
+                Text = "<h3>Good day, Ekaterina!</h3>" + $"<p>{model.Name} is interested of your web site.</p>" +
+                       (model.SelectedProductId != 0 ? $"<p>Customer selected product type {(ProductTypes)model.SelectedProductId}.</p>" :
+                           string.Empty) +
+                       $"<p>Customer e-mail: {model.Email}.</p><p>Customer message was: {model.Message}</p>"
             };
-            message.Body = bodyBuilder.ToMessageBody();
 
             SmtpClient client = new SmtpClient();
 
             client.Connect(
                 _applicationSettings.MailConfiguration.SmtpServer,
-                _applicationSettings.MailConfiguration.Port,
-                true);
+                _applicationSettings.MailConfiguration.SmtpPort,
+                SecureSocketOptions.StartTls);
 
             client.Authenticate(
                 _applicationSettings.MailConfiguration.Login,
