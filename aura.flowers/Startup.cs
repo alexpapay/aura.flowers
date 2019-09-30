@@ -7,6 +7,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using System.Globalization;
+using aura.flowers.Utils;
+using Microsoft.Extensions.Hosting;
 
 namespace aura.flowers
 {
@@ -30,9 +32,14 @@ namespace aura.flowers
             });
 
             services.AddLocalization(options => options.ResourcesPath = "Resources");
-            services.AddMvc()
-                .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
+
+            services.AddControllersWithViews()
+                .SetCompatibilityVersion(CompatibilityVersion.Latest)
                 .AddViewLocalization();
+
+            // Read config file:
+            services.Configure<ApplicationSettings>(Configuration.GetSection("ApplicationSettings"));
+
             services.Configure<RequestLocalizationOptions>(options =>
             {
                 CultureInfo[] supportedCultures = {
@@ -48,8 +55,12 @@ namespace aura.flowers
             });
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        /// <summary>
+        /// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        /// </summary>
+        /// <param name="app"></param>
+        /// <param name="env"></param>
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -58,11 +69,10 @@ namespace aura.flowers
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
-            IOptions<RequestLocalizationOptions> localizeOptions = 
+            IOptions<RequestLocalizationOptions> localizeOptions =
                 app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>();
             app.UseRequestLocalization(localizeOptions.Value);
 
@@ -70,11 +80,13 @@ namespace aura.flowers
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
-            app.UseMvc(routes =>
+            app.UseRouting();
+
+            app.UseEndpoints(endpoints =>
             {
-                routes.MapRoute(
+                endpoints.MapControllerRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

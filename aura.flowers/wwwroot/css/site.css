@@ -2052,6 +2052,10 @@ nav {
         }
 }
 
+.text-danger {
+    color: #a94442;
+}
+
 @media(min-width: 960px) {
 }
 
