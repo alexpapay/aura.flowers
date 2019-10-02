@@ -1,0 +1,3 @@
+[submodule "website.core"]
+	path = website.core
+	url = https://github.com/alexpapay/website.core.git
