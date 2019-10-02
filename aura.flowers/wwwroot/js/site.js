@@ -30,7 +30,7 @@ $(document).ready(function () {
         if ($("#navigation-section").hasClass("showing"))
             offset = 0;
         var target = this.hash;
-        if ($(this).data('offset') != undefined) offset = $(this).data('offset');
+        if ($(this).data('offset') !== undefined) offset = $(this).data('offset');
         $('html, body').stop().animate({
             'scrollTop': $(target).offset().top - offset
         }, 850, 'swing', function () {

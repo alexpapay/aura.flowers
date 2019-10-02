@@ -84,7 +84,7 @@ form .form-button {
     font-weight: bold;
     color: #ffffff;
     padding: 1.0em 1.0em 1.0em 1.0em;
-    border: rgb(175, 62, 88) solid 0px;
+    border: rgb(175, 62, 88) solid 0;
     background-color: rgb(175, 62, 88);
     -ms-border-radius: 10px;
     border-radius: 10px;
@@ -221,10 +221,10 @@ form .form-button {
     transition: all 0.5s ease;
     margin-right: 0.25rem;
     margin-bottom: 0.25rem;
-    width: 2.125rem;
-    height: 2.125rem;
-    line-height: 1.65em;
-    font-size: 1.2625rem;
+    width: 1.9rem;
+    height: 1.9rem;
+    line-height: 1.9rem;
+    font-size: 1.2rem;
 }
 
     .social-button.middle {
@@ -417,9 +417,9 @@ nav {
             }
 
                 nav .menu ul li a {
-                    font-size: 18px;
+                    font-size: 1.1rem;
                     line-height: 65px;
-                    padding: 2px 12px;
+                    padding: 2px 9px;
                     text-decoration: none;
                     text-transform: uppercase;
                     font-weight: bold;
@@ -445,9 +445,9 @@ nav {
                     -o-transition: 1.0s;
                     -webkit-transition: 1.0s;
                     transition: 1.0s;
-                    font-size: 18px;
-                    line-height: 0px;
-                    padding: 12.25px 12.25px;
+                    font-size: 1.1rem;
+                    line-height: 0;
+                    padding: 0.75rem 9px 15.55px;
                     text-decoration: none;
                     text-transform: uppercase;
                     font-weight: bold;
@@ -491,7 +491,7 @@ nav {
         background: rgba(255, 255, 255, 0.85);
         height: 80px;
         padding: 10px 15px 5px 15px;
-        box-shadow: 0 0 5px 0px rgba(0, 0, 0, .25);
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, .25);
         z-index: 100;
         -ms-transition: .5s;
         -o-transition: .5s;
@@ -561,7 +561,7 @@ nav {
 
         .menu-icon i {
             padding: 10px;
-            background-color: #ffffffb0;
+            background-color: rgba(255,255,255,176);
             border: #cccccc 2px solid;
             -ms-border-radius: 10px;
             border-radius: 10px;
@@ -574,10 +574,10 @@ nav {
         nav .logo img {
             padding-top: 30px;
             height: 150px;
-            -ms-transition: 0s;
-            -o-transition: 0s;
-            -webkit-transition: 0s;
-            transition: 0s;
+            -ms-transition: 0;
+            -o-transition: 0;
+            -webkit-transition: 0;
+            transition: 0;
         }
 
     nav .menu {
@@ -798,11 +798,11 @@ nav {
 
 /* Animations */
 .loaded .head-banner {
-    -webkit-animation: opacityIn 2.0s ease-in-out 0.0s forwards;
-    -moz-animation: opacityIn 2.0s ease-in-out 0.0s forwards;
-    -o-animation: opacityIn 2.0s ease-in-out 0.0s forwards;
-    -ms-animation: opacityIn 2.0s ease-in-out 0.0s forwards;
-    animation: opacityIn 2.0s ease-in-out 0.0s forwards;
+    -webkit-animation: opacityIn 2.0s ease-in-out 0.0 forwards;
+    -moz-animation: opacityIn 2.0s ease-in-out 0.0 forwards;
+    -o-animation: opacityIn 2.0s ease-in-out 0.0 forwards;
+    -ms-animation: opacityIn 2.0s ease-in-out 0.0 forwards;
+    animation: opacityIn 2.0s ease-in-out 0.0 forwards;
 }
 
     .loaded .head-banner:after {
@@ -957,9 +957,9 @@ nav {
 
 @keyframes scaleInRotateIn {
     100% {
-        -ms-transform: scaleX(1) rotate(0deg);
-        -webkit-transform: scaleX(1) rotate(0deg);
-        transform: scaleX(1) rotate(0deg);
+        -ms-transform: scaleX(1) rotate(0);
+        -webkit-transform: scaleX(1) rotate(0);
+        transform: scaleX(1) rotate(0);
     }
 }
 
@@ -1595,6 +1595,8 @@ nav {
     border: #f3f3f3 3px solid;
     -ms-border-radius: 10px;
     border-radius: 10px;
+    min-height: 200px;
+    justify-content: space-between;
 }
 
     .testimonials-box:hover {
@@ -1878,7 +1880,7 @@ nav {
     align-items: center;
 }
 
-.md-header h1 {
+    .md-header h1 {
         margin-top: 1.5em;
         font-size: 2.5em;
         line-height: 0.75em;
@@ -1905,7 +1907,7 @@ nav {
         color: #858585;
     }
 
-.md-header a i {
+        .md-header a i {
             cursor: pointer;
             font-size: 1.75em;
             margin-left: 10px;

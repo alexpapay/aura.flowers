@@ -117,6 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="testimonial-one-author" xml:space="preserve">
+    <value>Tatiana</value>
+  </data>
+  <data name="testimonial-one-company" xml:space="preserve">
+    <value>Apartmán Bratislava</value>
+  </data>
+  <data name="testimonial-one-text" xml:space="preserve">
+    <value>Also in our apartment there is a magic flower. Thank. Now it will create coziness for our customers.</value>
+  </data>
   <data name="testimonials-subtitle" xml:space="preserve">
     <value>From all over the world</value>
   </data>
