@@ -110,10 +110,10 @@ $(document).ready(function () {
     });
 
     $('.play').on('click', function () {
-        owl.trigger('play.owl.autoplay', [3000])
+        owl.trigger('play.owl.autoplay', [3000]);
     });
     $('.stop').on('click', function () {
-        owl.trigger('stop.owl.autoplay')
+        owl.trigger('stop.owl.autoplay');
     });
 
     // Modal windows:

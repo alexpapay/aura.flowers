@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using System.Globalization;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.Extensions.Hosting;
 using website.core.Extensions;
 using website.core.Services.Email.Interfaces;
@@ -42,14 +43,16 @@ namespace aura.flowers
                 .AddDataAnnotationsLocalization()
                 .AddViewLocalization();
 
-            // Setup singletons by config file sections:
-            services.AddSingleton<IEmailConfiguration>(Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>());
-            
-            //services.AddSingleton<IGoogleRecaptchaConfiguration>(Configuration.GetSection("GoogleRecaptchaConfiguration").Get<GoogleRecaptchaConfiguration>());
-
             // Dependency injection:
             services.AddInjections();
 
+            // Setup singletons by config file sections:
+            services.AddSingleton(_ => Configuration);
+            services.AddSingleton<IEmailConfiguration>(Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>());
+            
+            
+            //services.AddSingleton<IGoogleRecaptchaConfiguration>(Configuration.GetSection("GoogleRecaptchaConfiguration").Get<GoogleRecaptchaConfiguration>());
+            
             services.Configure<RequestLocalizationOptions>(options =>
             {
                 CultureInfo[] supportedCultures = {
@@ -78,8 +81,9 @@ namespace aura.flowers
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
-                app.UseHsts();
+                app.UseDeveloperExceptionPage();
+                //app.UseExceptionHandler("/Home/Error");
+                //app.UseHsts();
             }
 
             IOptions<RequestLocalizationOptions> localizeOptions =
@@ -89,6 +93,13 @@ namespace aura.flowers
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+            
+            app.UseForwardedHeaders(new ForwardedHeadersOptions
+            {
+                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+            });
+
+            app.UseDefaultFiles();
 
             app.UseRouting();
 

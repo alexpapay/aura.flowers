@@ -2,8 +2,10 @@
 
 body {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+    width: auto;
     font-family: 'Roboto Slab', serif;
+    overflow-x: hidden;
 }
 
 a {
@@ -382,7 +384,6 @@ nav {
     }
 
         nav .logo img {
-            padding-top: 3px;
             height: 80px;
             -ms-transition: .5s;
             -o-transition: .5s;
@@ -573,8 +574,7 @@ nav {
     }
 
         nav .logo img {
-            padding-top: 30px;
-            height: 150px;
+            height: 100px;
             -ms-transition: 0;
             -o-transition: 0;
             -webkit-transition: 0;
@@ -594,7 +594,8 @@ nav {
         }
 
             nav .menu ul li a {
-                font-size: 2.0rem;
+                font-size: 1.5rem;
+                line-height: 3.0rem;
             }
 
                 nav .menu ul li a.active,
@@ -604,7 +605,7 @@ nav {
                 }
 
             nav .menu ul li select {
-                font-size: 2.0em;
+                font-size: 1.5em;
                 width: auto;
             }
 
@@ -617,7 +618,7 @@ nav {
     }
 
     .showing {
-        height: 100vh;
+        height: 100%;
         background: rgba(255, 255, 255, 0.95);
         box-shadow: 0 0 5px 0 rgba(0, 0, 0, .25);
         overflow-y: auto;
@@ -1096,6 +1097,7 @@ nav {
 
 .container-about-us-big-left-image {
     background-image: url(/img/about/studio.jpg);
+    width: 100%;
     -ms-background-size: cover;
     background-size: cover;
     -ms-background-repeat: no-repeat;
@@ -1127,6 +1129,7 @@ nav {
 
 .container-about-us-big-right-image-one {
     background-image: url(/img/about/team.jpg);
+    width: 100%;
     -ms-background-size: cover;
     background-size: cover;
     -ms-background-repeat: no-repeat;
@@ -1153,6 +1156,7 @@ nav {
 
 .container-about-us-big-right-image-two {
     background-image: url(/img/about/wall.jpg);
+    width: 100%;
     -ms-background-size: cover;
     background-size: cover;
     -ms-background-repeat: no-repeat;
@@ -1316,36 +1320,22 @@ nav {
     transform: rotateY(-180deg);
 }
 
-.flip:hover > .front {
+.flip:hover > .front,
+.flip:active > .front {
     -ms-transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
+    cursor: pointer;
 }
 
-.flip:hover > .back {
+.flip:hover > .back,
+.flip:active > .back {
     -ms-opacity: 1;
     opacity: 1;
     -ms-transform: rotateY(0);
     -webkit-transform: rotateY(0);
     transform: rotateY(0);
-}
-
-.flip.flip-vertical > .back {
-    -ms-transform: rotateX(-180deg);
-    -webkit-transform: rotateX(-180deg);
-    transform: rotateX(-180deg);
-}
-
-.flip.flip-vertical:hover > .front {
-    -ms-transform: rotateX(180deg);
-    -webkit-transform: rotateX(180deg);
-    transform: rotateX(180deg);
-}
-
-.flip.flip-vertical:hover > .back {
-    -ms-transform: rotateX(0);
-    -webkit-transform: rotateX(0);
-    transform: rotateX(0);
+    cursor: pointer;
 }
 
 .flip {
@@ -1471,6 +1461,7 @@ nav {
         -ms-transform: scale(0.95);
         -webkit-transform: scale(0.95);
         transform: scale(0.95);
+        background-color: #000000;
     }
 
 .portfolio-item-inner {
@@ -1781,6 +1772,8 @@ nav {
 .footer-contacts-section h1 {
     color: #ffffff;
     font-size: 3.0em;
+    text-align: center;
+    display: inline;
 }
 
 .footer-contacts-section .button {
@@ -2038,6 +2031,10 @@ nav {
         flex-direction: column;
     }
 
+        .footer-contacts-section-address a {
+            color: #ffffff;
+        }
+
     .testimonials-box:before {
         left: 20px;
     }
@@ -2074,7 +2071,46 @@ nav {
     opacity: 0;
 }
 
-@media(min-width: 960px) {
+@media(max-width: 400px) {
+    .container-products .product-item {
+        width: 100%;
+    }
+
+    .product-item {
+        width: 100%;
+    }
+
+        .product-item .flip {
+            width: 100%;
+        }
+
+    .testimonials-box .image-box {
+        left: 20px;
+    }
+
+    .md-header h1 {
+        font-size: 1.75rem;
+        line-height: 1.5rem;
+    }
+
+        .md-header h1 span {
+            display: none;
+        }
+    .md-contact-form-send-captcha {
+        -o-justify-content: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+
+    .container-about-us-big-right {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .container-about-us-big-left {
+        padding: 0 0 25px 0;
+        margin: 0 auto;
+    }
 }
 
 @media(min-width: 2500px) {

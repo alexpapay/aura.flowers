@@ -17,19 +17,19 @@ namespace aura.flowers.Controllers
     public class HomeController : Controller
     {
         private readonly IEmailService _emailService;
-        private readonly IGoogleRecaptchaService _googleRecaptchaService;
+        //private readonly IGoogleRecaptchaService _googleRecaptchaService;
         private readonly IEmailConfiguration _emailConfiguration;
-        private readonly IGoogleRecaptchaConfiguration _googleRecaptchaConfiguration;
+        //private readonly IGoogleRecaptchaConfiguration _googleRecaptchaConfiguration;
 
         public HomeController(IEmailService emailService,
-            IGoogleRecaptchaService googleRecaptchaService,
-            IEmailConfiguration emailConfiguration,
-            IGoogleRecaptchaConfiguration googleRecaptchaConfiguration)
+            //IGoogleRecaptchaService googleRecaptchaService,
+            IEmailConfiguration emailConfiguration/*,
+            IGoogleRecaptchaConfiguration googleRecaptchaConfiguration*/)
         {
             _emailService = emailService;
-            _googleRecaptchaService = googleRecaptchaService;
+            //_googleRecaptchaService = googleRecaptchaService;
             _emailConfiguration = emailConfiguration;
-            _googleRecaptchaConfiguration = googleRecaptchaConfiguration;
+            //_googleRecaptchaConfiguration = googleRecaptchaConfiguration;
         }
 
         /// <summary>
@@ -38,7 +38,6 @@ namespace aura.flowers.Controllers
         /// <returns>Main index page view.</returns>
         public IActionResult Index()
         {
-            var tets = _googleRecaptchaConfiguration;
             return View();
         }
 
@@ -76,17 +75,17 @@ namespace aura.flowers.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> SendMessage([FromForm] ContactUsViewModel model)
+        public /*async Task<*/IActionResult/*>*/ SendMessage([FromForm] ContactUsViewModel model)
         {
             if (ModelState.IsValid)
             {
-                if (!await _googleRecaptchaService
-                    .IsReCaptchaPassedAsync(Request.Form["g-recaptcha-response"],
-                    _googleRecaptchaConfiguration.Secret))
-                {
-                    ModelState.AddModelError(string.Empty, "You failed the CAPTCHA");
-                    return Json(new { error = "google-recaptcha-error" });
-                }
+                //if (!await _googleRecaptchaService
+                //    .IsReCaptchaPassedAsync(Request.Form["g-recaptcha-response"],
+                //    _googleRecaptchaConfiguration.Secret))
+                //{
+                //    ModelState.AddModelError(string.Empty, "You failed the CAPTCHA");
+                //    return Json(new { error = "google-recaptcha-error" });
+                //}
 
                 _emailService.Send(new EmailMessage
                 {
