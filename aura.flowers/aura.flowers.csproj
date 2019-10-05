@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MailKit" Version="2.3.1.6" />
+    <ProjectReference Include="..\..\website.core\website.core\website.core.csproj" />
   </ItemGroup>
   
 </Project>

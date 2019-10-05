@@ -4,22 +4,32 @@ using aura.flowers.Models;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Http;
 using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using aura.flowers.Utils;
-using MailKit.Net.Smtp;
-using MailKit.Security;
-using Microsoft.Extensions.Options;
-using MimeKit;
-using MimeKit.Text;
+using Microsoft.AspNetCore.Authorization;
+using website.core.Services.Email.Interfaces;
+using website.core.Services.Email.Models;
+using website.core.Services.GoogleRecaptcha.Interfaces;
 
 namespace aura.flowers.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ApplicationSettings _applicationSettings;
+        private readonly IEmailService _emailService;
+        private readonly IGoogleRecaptchaService _googleRecaptchaService;
+        private readonly IEmailConfiguration _emailConfiguration;
+        private readonly IGoogleRecaptchaConfiguration _googleRecaptchaConfiguration;
 
-        public HomeController(IOptions<ApplicationSettings> applicationSettings)
+        public HomeController(IEmailService emailService,
+            IGoogleRecaptchaService googleRecaptchaService,
+            IEmailConfiguration emailConfiguration,
+            IGoogleRecaptchaConfiguration googleRecaptchaConfiguration)
         {
-            _applicationSettings = applicationSettings.Value;
+            _emailService = emailService;
+            _googleRecaptchaService = googleRecaptchaService;
+            _emailConfiguration = emailConfiguration;
+            _googleRecaptchaConfiguration = googleRecaptchaConfiguration;
         }
 
         /// <summary>
@@ -28,6 +38,7 @@ namespace aura.flowers.Controllers
         /// <returns>Main index page view.</returns>
         public IActionResult Index()
         {
+            var tets = _googleRecaptchaConfiguration;
             return View();
         }
 
@@ -63,43 +74,43 @@ namespace aura.flowers.Controllers
         /// </summary>
         /// <param name="model">Contact us modal window view model.</param>
         [HttpPost]
-        public IActionResult SendMessage(ContactUsViewModel model)
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> SendMessage([FromForm] ContactUsViewModel model)
         {
-            MimeMessage message = new MimeMessage();
-
-            message.From.Add(
-                new MailboxAddress("Contact Us form", _applicationSettings.MailConfiguration.MailFrom));
-            message.To.Add(
-                new MailboxAddress("Aura.Flowers manager", _applicationSettings.MailConfiguration.MailTo));
-
-            message.Subject = "Aura.Flowers order from site on" +
-                              (model.SelectedProductId != 0 ? $"for product type {(ProductTypes)model.SelectedProductId}" :
-                                  string.Empty);
-
-            message.Body = new TextPart(TextFormat.Html)
+            if (ModelState.IsValid)
             {
-                Text = "<h3>Good day, Ekaterina!</h3>" + $"<p>{model.Name} is interested of your web site.</p>" +
-                       (model.SelectedProductId != 0 ? $"<p>Customer selected product type {(ProductTypes)model.SelectedProductId}.</p>" :
-                           string.Empty) +
-                       $"<p>Customer e-mail: {model.Email}.</p><p>Customer message was: {model.Message}</p>"
-            };
+                if (!await _googleRecaptchaService
+                    .IsReCaptchaPassedAsync(Request.Form["g-recaptcha-response"],
+                    _googleRecaptchaConfiguration.Secret))
+                {
+                    ModelState.AddModelError(string.Empty, "You failed the CAPTCHA");
+                    return Json(new { error = "google-recaptcha-error" });
+                }
 
-            SmtpClient client = new SmtpClient();
+                _emailService.Send(new EmailMessage
+                {
+                    FromAddresses = new List<EmailAddress>
+                    {
+                        new EmailAddress { Name = "Request from Aura.Flowers site.", Address = _emailConfiguration.MailFrom }
+                    },
+                    ToAddresses = new List<EmailAddress>
+                    {
+                        new EmailAddress{ Name = "Aura.Flowers sales manager", Address = _emailConfiguration.MailTo }
+                    },
+                    Subject = "Aura.Flowers order." +
+                              (model.SelectedProductId != 0 ? $" Product type {(ProductTypes)model.SelectedProductId}" :
+                                  string.Empty),
+                    Content = "<h3>Good day, Ekaterina!</h3>" + $"<p>{model.Name} is interested of your web site.</p>" +
+                              (model.SelectedProductId != 0 ? $"<p>Customer selected product type {(ProductTypes)model.SelectedProductId}.</p>" :
+                                  string.Empty) +
+                              $"<p>Customer e-mail: {model.Email}.</p><p>Customer message was: {model.Message}</p>"
+                });
 
-            client.Connect(
-                _applicationSettings.MailConfiguration.SmtpServer,
-                _applicationSettings.MailConfiguration.SmtpPort,
-                SecureSocketOptions.StartTls);
+                return Json(new { success = true });
+            }
 
-            client.Authenticate(
-                _applicationSettings.MailConfiguration.Login,
-                _applicationSettings.MailConfiguration.Password);
-
-            client.Send(message);
-            client.Disconnect(true);
-            client.Dispose();
-
-            return View("Index");
+            return Json(new { error = "backend-validation-error" });
         }
 
         /// <summary>

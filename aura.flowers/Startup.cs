@@ -7,8 +7,12 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using System.Globalization;
-using aura.flowers.Utils;
 using Microsoft.Extensions.Hosting;
+using website.core.Extensions;
+using website.core.Services.Email.Interfaces;
+using website.core.Services.Email.Models;
+using website.core.Services.GoogleRecaptcha.Interfaces;
+using website.core.Services.GoogleRecaptcha.Models;
 
 namespace aura.flowers
 {
@@ -35,10 +39,16 @@ namespace aura.flowers
 
             services.AddControllersWithViews()
                 .SetCompatibilityVersion(CompatibilityVersion.Latest)
+                .AddDataAnnotationsLocalization()
                 .AddViewLocalization();
 
-            // Read config file:
-            services.Configure<ApplicationSettings>(Configuration.GetSection("ApplicationSettings"));
+            // Setup singletons by config file sections:
+            services.AddSingleton<IEmailConfiguration>(Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>());
+            
+            //services.AddSingleton<IGoogleRecaptchaConfiguration>(Configuration.GetSection("GoogleRecaptchaConfiguration").Get<GoogleRecaptchaConfiguration>());
+
+            // Dependency injection:
+            services.AddInjections();
 
             services.Configure<RequestLocalizationOptions>(options =>
             {

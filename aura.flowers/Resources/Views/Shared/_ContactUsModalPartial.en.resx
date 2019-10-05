@@ -117,11 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="contact-us-backend-validation" xml:space="preserve">
+    <value>There was an error trying to send your message. Please try again or send mail on info@aura.flowers.</value>
+  </data>
   <data name="contact-us-email" xml:space="preserve">
     <value>Your Email</value>
   </data>
   <data name="contact-us-message" xml:space="preserve">
-    <value>Your Message</value>
+    <value>Your Message (max. 3000 symbols)</value>
   </data>
   <data name="contact-us-name" xml:space="preserve">
     <value>Your Name</value>

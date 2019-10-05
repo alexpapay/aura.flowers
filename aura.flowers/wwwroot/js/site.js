@@ -3,6 +3,13 @@ window.addEventListener("load", () => {
     document.querySelector("body").classList.add("loaded");
 });
 
+window.onload = function () {
+    var $recaptcha = document.querySelector('#g-recaptcha-response');
+
+    if ($recaptcha) {
+        $recaptcha.setAttribute("required", "required");
+    }
+};
 
 $(document).ready(function () {
     // Menu scroll:
@@ -111,10 +118,34 @@ $(document).ready(function () {
 
     // Modal windows:
     $('.md-trigger').on('click', function () {
+        var productId = $(this).parent().find('input:hidden:first').attr('value');
+
         $('.md-modal').addClass('md-show');
+
+        if (productId !== null) {
+            $('#SelectedProductId').val(productId);
+        }
     });
 
     $('.md-close').on('click', function () {
         $('.md-modal').removeClass('md-show');
     });
+
+    $('form').submit(function (e) {
+        e.preventDefault();
+        $.post(this.action, $(this).serialize(), function (response) {
+            if (response.error) {
+                if (response.error === "google-recaptcha-error") {
+                    $('#backend-validation-error').show();
+                }
+            }
+            else {
+                $('#backend-validation-error').hide();
+                $('.md-modal').removeClass('md-show');
+            }
+        }, 'json');
+    });
+
+    // Validation:
+    $("#contact-us-form").validate();
 });

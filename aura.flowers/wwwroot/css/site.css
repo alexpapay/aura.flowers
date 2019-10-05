@@ -456,6 +456,7 @@ nav {
                     background-color: rgba(255, 255, 255, 0);
                     font-family: inherit;
                     outline: 0;
+                    cursor: pointer;
                 }
 
                     nav .menu ul li select:focus {
@@ -798,11 +799,11 @@ nav {
 
 /* Animations */
 .loaded .head-banner {
-    -webkit-animation: opacityIn 2.0s ease-in-out 0.0 forwards;
-    -moz-animation: opacityIn 2.0s ease-in-out 0.0 forwards;
-    -o-animation: opacityIn 2.0s ease-in-out 0.0 forwards;
-    -ms-animation: opacityIn 2.0s ease-in-out 0.0 forwards;
-    animation: opacityIn 2.0s ease-in-out 0.0 forwards;
+    -webkit-animation: opacityIn 2.0s ease-in-out 0.0s forwards;
+    -moz-animation: opacityIn 2.0s ease-in-out 0.0s forwards;
+    -o-animation: opacityIn 2.0s ease-in-out 0.0s forwards;
+    -ms-animation: opacityIn 2.0s ease-in-out 0.0s forwards;
+    animation: opacityIn 2.0s ease-in-out 0.0s forwards;
 }
 
     .loaded .head-banner:after {
@@ -1977,8 +1978,13 @@ nav {
     opacity: 1;
 }
 
-/* Media: */
+.md-contact-form-send-captcha {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+/* Media: */
 @media(max-width: 960px) {
     .container-about-us-header {
         flex-direction: column;
@@ -2056,6 +2062,16 @@ nav {
 
 .text-danger {
     color: #a94442;
+}
+
+#g-recaptcha-response {
+    display: block !important;
+    position: absolute;
+    margin: -78px 0 0 0 !important;
+    width: 302px !important;
+    height: 76px !important;
+    z-index: -999999;
+    opacity: 0;
 }
 
 @media(min-width: 960px) {

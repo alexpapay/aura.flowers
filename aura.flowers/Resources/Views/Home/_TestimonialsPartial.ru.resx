@@ -126,6 +126,15 @@
   <data name="testimonial-one-text" xml:space="preserve">
     <value>И в наших апартаментах появился волшебный цветок. Спасибо. Теперь он будет создавать уют для наших клиентов.</value>
   </data>
+  <data name="testimonial-two-author" xml:space="preserve">
+    <value>Алёна Куротова</value>
+  </data>
+  <data name="testimonial-two-company" xml:space="preserve">
+    <value>SlovakiaInvest</value>
+  </data>
+  <data name="testimonial-two-text" xml:space="preserve">
+    <value>Оригинальное решение для оформления офиса. Цветы от Aura отлично вписались в строгий стиль кабинета для переговоров и создали сказочную атмосферу в холле языковой школы ICan. Благодарим за сотрудничество.</value>
+  </data>
   <data name="testimonials-subtitle" xml:space="preserve">
     <value>Наших клиентов со всего мира</value>
   </data>

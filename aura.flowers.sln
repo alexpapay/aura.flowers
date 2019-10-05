@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aura.flowers", "aura.flowers\aura.flowers.csproj", "{40712B3F-3975-47CD-8CB0-003D92684812}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "website.core", "..\website.core\website.core\website.core.fsproj", "{2E09E21F-4422-4333-8F21-505F60F3DCC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "website.core", "..\website.core\website.core\website.core.csproj", "{5AFA8623-B220-4B51-A48A-F5F75DBAC9A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{40712B3F-3975-47CD-8CB0-003D92684812}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40712B3F-3975-47CD-8CB0-003D92684812}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40712B3F-3975-47CD-8CB0-003D92684812}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2E09E21F-4422-4333-8F21-505F60F3DCC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2E09E21F-4422-4333-8F21-505F60F3DCC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2E09E21F-4422-4333-8F21-505F60F3DCC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2E09E21F-4422-4333-8F21-505F60F3DCC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AFA8623-B220-4B51-A48A-F5F75DBAC9A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AFA8623-B220-4B51-A48A-F5F75DBAC9A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AFA8623-B220-4B51-A48A-F5F75DBAC9A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AFA8623-B220-4B51-A48A-F5F75DBAC9A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

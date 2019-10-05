@@ -126,6 +126,15 @@
   <data name="testimonial-one-text" xml:space="preserve">
     <value>Also in our apartment there is a magic flower. Thank. Now it will create coziness for our customers.</value>
   </data>
+  <data name="testimonial-two-author" xml:space="preserve">
+    <value>Aljona Kurotova</value>
+  </data>
+  <data name="testimonial-two-company" xml:space="preserve">
+    <value>SlovakiaInvest</value>
+  </data>
+  <data name="testimonial-two-text" xml:space="preserve">
+    <value>So original solution in the office interior. Flowers from Aura fit harmonious into the strict style meeting room and create a fabulous atmosphere in the hall of the ICan language school. Thank You.</value>
+  </data>
   <data name="testimonials-subtitle" xml:space="preserve">
     <value>From all over the world</value>
   </data>
