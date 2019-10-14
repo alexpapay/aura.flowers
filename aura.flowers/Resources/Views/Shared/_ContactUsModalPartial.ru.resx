@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="contact-us-backend-validation" xml:space="preserve">
-    <value>Произошла ошибка при отправке формы. Попробуйте повторить отправку. Или напишите нам на почту info@aura.flowers.</value>
+    <value>Произошла ошибка при отправке формы. Попробуйте повторить отправку или напишите нам на почту info@aura.flowers.</value>
   </data>
   <data name="contact-us-email" xml:space="preserve">
     <value>Ваша почта</value>

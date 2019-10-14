@@ -37,8 +37,8 @@
                 </select>
             </div>
             <div class="md-contact-form-send-captcha">
+                <div class="g-recaptcha g-recaptcha-not-robot" data-sitekey="@Config["GoogleRecaptchaConfiguration:Key"]"></div>
                 <button class="form-button" type="submit">@Localizer["contact-us-send"]</button>
-                @*<div class="g-recaptcha" data-sitekey="@Config["GoogleRecaptchaConfiguration:Key"]"></div>*@
             </div>
             <span id="backend-validation-error" class="text-danger" style="display: none;">
                 @Localizer["contact-us-backend-validation"]

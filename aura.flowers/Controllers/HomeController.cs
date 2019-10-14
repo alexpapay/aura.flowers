@@ -5,32 +5,33 @@ using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Threading.Tasks;
 using aura.flowers.Utils;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Options;
 using website.core.Services.Email.Interfaces;
 using website.core.Services.Email.Models;
 using website.core.Services.GoogleRecaptcha.Interfaces;
+using website.core.Services.GoogleRecaptcha.Models;
 
 namespace aura.flowers.Controllers
 {
     public class HomeController : Controller
     {
         private readonly IEmailService _emailService;
-        //private readonly IGoogleRecaptchaService _googleRecaptchaService;
-        private readonly IEmailConfiguration _emailConfiguration;
-        //private readonly IGoogleRecaptchaConfiguration _googleRecaptchaConfiguration;
+        private readonly IGoogleRecaptchaService _googleRecaptchaService;
+        private readonly IOptions<EmailConfiguration> _emailConfiguration;
+        private readonly IOptions<GoogleRecaptchaConfiguration> _googleRecaptchaConfiguration;
 
         public HomeController(IEmailService emailService,
-            //IGoogleRecaptchaService googleRecaptchaService,
-            IEmailConfiguration emailConfiguration/*,
-            IGoogleRecaptchaConfiguration googleRecaptchaConfiguration*/)
+            IGoogleRecaptchaService googleRecaptchaService,
+            IOptions<EmailConfiguration> emailConfiguration,
+            IOptions<GoogleRecaptchaConfiguration> googleRecaptchaConfiguration)
         {
             _emailService = emailService;
-            //_googleRecaptchaService = googleRecaptchaService;
+            _googleRecaptchaService = googleRecaptchaService;
             _emailConfiguration = emailConfiguration;
-            //_googleRecaptchaConfiguration = googleRecaptchaConfiguration;
+            _googleRecaptchaConfiguration = googleRecaptchaConfiguration;
         }
 
         /// <summary>
@@ -76,27 +77,27 @@ namespace aura.flowers.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public /*async Task<*/IActionResult/*>*/ SendMessage([FromForm] ContactUsViewModel model)
+        public async Task<IActionResult> SendMessage([FromForm] ContactUsViewModel model)
         {
             if (ModelState.IsValid)
             {
-                //if (!await _googleRecaptchaService
-                //    .IsReCaptchaPassedAsync(Request.Form["g-recaptcha-response"],
-                //    _googleRecaptchaConfiguration.Secret))
-                //{
-                //    ModelState.AddModelError(string.Empty, "You failed the CAPTCHA");
-                //    return Json(new { error = "google-recaptcha-error" });
-                //}
+                if (!await _googleRecaptchaService
+                    .IsReCaptchaPassedAsync(Request.Form["g-recaptcha-response"],
+                    _googleRecaptchaConfiguration.Value.Secret))
+                {
+                    ModelState.AddModelError(string.Empty, "You failed the CAPTCHA");
+                    return Json(new { error = "google-recaptcha-error" });
+                }
 
                 _emailService.Send(new EmailMessage
                 {
                     FromAddresses = new List<EmailAddress>
                     {
-                        new EmailAddress { Name = "Request from Aura.Flowers site.", Address = _emailConfiguration.MailFrom }
+                        new EmailAddress { Name = "Request from Aura.Flowers site.", Address = _emailConfiguration.Value.MailFrom }
                     },
                     ToAddresses = new List<EmailAddress>
                     {
-                        new EmailAddress{ Name = "Aura.Flowers sales manager", Address = _emailConfiguration.MailTo }
+                        new EmailAddress{ Name = "Aura.Flowers sales manager", Address = _emailConfiguration.Value.MailTo }
                     },
                     Subject = "Aura.Flowers order." +
                               (model.SelectedProductId != 0 ? $" Product type {(ProductTypes)model.SelectedProductId}" :

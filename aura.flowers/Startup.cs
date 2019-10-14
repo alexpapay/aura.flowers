@@ -10,8 +10,8 @@ using System.Globalization;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.Extensions.Hosting;
 using website.core.Extensions;
-using website.core.Services.Email.Interfaces;
 using website.core.Services.Email.Models;
+using website.core.Services.GoogleRecaptcha.Models;
 
 namespace aura.flowers
 {
@@ -32,14 +32,15 @@ namespace aura.flowers
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-            
+
             // Dependency injection:
             services.AddInjections();
 
             // Setup singletons by config file sections:
             services.AddSingleton(_ => Configuration);
-            services.AddSingleton<IEmailConfiguration>(Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>());
-            //services.AddSingleton<IGoogleRecaptchaConfiguration>(Configuration.GetSection("GoogleRecaptchaConfiguration").Get<GoogleRecaptchaConfiguration>());
+
+            services.Configure<EmailConfiguration>(Configuration.GetSection("EmailConfiguration"));
+            services.Configure<GoogleRecaptchaConfiguration>(Configuration.GetSection("GoogleRecaptchaConfiguration"));
 
             // Localization:
             services.AddLocalization(options => options.ResourcesPath = "Resources");

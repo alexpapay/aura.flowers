@@ -33,7 +33,7 @@ $(document).ready(function () {
     // Scroll for all browsers:
     $('.scroll-to').on('click', function (e) {
         e.preventDefault();
-        var offset = 80;
+        var offset = 100;
         if ($("#navigation-section").hasClass("showing"))
             offset = 0;
         var target = this.hash;
@@ -150,4 +150,10 @@ $(document).ready(function () {
 
     // Validation:
     $("#contact-us-form").validate();
+
+    // Google recaptcha:
+    var $recaptcha = document.querySelector('#g-recaptcha-response');
+    if ($recaptcha) {
+        $recaptcha.setAttribute("required", "required");
+    };
 });
