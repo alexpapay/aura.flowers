@@ -14,7 +14,7 @@ window.onload = function () {
 $(document).ready(function () {
     // Menu scroll:
     $(window).on('scroll', function () {
-        if ($(window).width() >= 1024) {
+        if ($(window).width() >= 1200) {
             if ($(window).scrollTop()) {
                 $('nav').addClass('black');
             } else {
@@ -117,6 +117,8 @@ $(document).ready(function () {
     });
 
     // Modal windows:
+    $('.md-modal').removeClass('md-show');
+
     $('.md-trigger').on('click', function () {
         var productId = $(this).parent().find('input:hidden:first').attr('value');
 

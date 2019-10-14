@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Threading.Tasks;
 using aura.flowers.Utils;
 using Microsoft.AspNetCore.Authorization;
@@ -55,7 +56,7 @@ namespace aura.flowers.Controllers
         /// </summary>
         /// <param name="culture">Culture name.</param>
         /// <param name="returnUrl">Return url string.</param>
-        /// <returns>Localized view for selectd language.</returns>
+        /// <returns>Localized view for selected language.</returns>
         [HttpPost]
         public IActionResult SetLanguage(string culture, string returnUrl)
         {
