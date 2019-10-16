@@ -18,7 +18,7 @@ a {
 }
 
     a:hover {
-        color: #E9204F;
+        color: #AF3E58;
     }
 
 .h1,
@@ -55,7 +55,7 @@ a {
 }
 
     .form-input-data p span {
-        color: #E9204F;
+        color: #AF3E58;
     }
 
 .input-text,
@@ -73,7 +73,7 @@ select {
 
     .input-text:focus {
         outline: none !important;
-        border: 1px solid #E9204F;
+        border: 1px solid #AF3E58;
     }
 
 .input-submit {
@@ -125,7 +125,7 @@ form .form-button {
     color: #262626;
     padding: 1.0em 0.25em 1.0em 0.25em;
     outline: none;
-    border: #E9204F solid 2px;
+    border: #AF3E58 solid 2px;
     background-color: rgba(255, 255, 255, 0);
     -ms-border-radius: 10px;
     border-radius: 10px;
@@ -140,7 +140,7 @@ form .form-button {
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: #E9204F;
+        background-color: #AF3E58;
         -ms-transform-origin: center;
         -o-transform-origin: center;
         -webkit-transform-origin: center;
@@ -189,7 +189,7 @@ form .form-button {
         top: 0;
         bottom: 0;
         width: 2px;
-        background-color: #E9204F;
+        background-color: #AF3E58;
         -ms-transform-origin: center;
         -o-transform-origin: center;
         -webkit-transform-origin: center;
@@ -599,7 +599,7 @@ nav {
 
 .header-line {
     border-top: 3px;
-    border-color: #E9204F;
+    border-color: #AF3E58;
     border-style: solid;
     margin: 0;
     width: 0;
@@ -626,7 +626,7 @@ nav {
 }
 
 .container-header h2 {
-    color: #E9204F;
+    color: #AF3E58;
     font-size: 2.0em;
     font-weight: 700;
     max-width: 500px;
@@ -649,7 +649,7 @@ nav {
     color: #262626;
     padding: 1.0em 0.25em 1.0em 0.25em;
     outline: none;
-    border: #E9204F solid 2px;
+    border: #AF3E58 solid 2px;
     background-color: rgba(255, 255, 255, 0);
     text-align: center;
     -ms-border-radius: 10px;
@@ -669,7 +669,7 @@ nav {
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: #E9204F;
+        background-color: #AF3E58;
         -ms-transform-origin: center right;
         -o-transform-origin: center right;
         -webkit-transform-origin: center right;
@@ -923,7 +923,7 @@ nav {
     font-size: 1.2em;
     padding: 0 0 25px 0;
     margin: 0;
-    color: #E9204F;
+    color: #AF3E58;
     text-transform: capitalize;
 }
 
@@ -934,7 +934,7 @@ nav {
 
 .header-line-1 {
     border-top: 1px;
-    border-color: #E9204F;
+    border-color: #AF3E58;
     border-style: solid;
     margin: 0;
     margin-top: 35px;
@@ -1177,7 +1177,7 @@ nav {
             -o-transition: 0.5s;
             -webkit-transition: 0.5s;
             transition: 0.5s;
-            margin-bottom: 15px;
+            margin-bottom: 23px;
         }
 
             .container-products .product-item .flip .product-button:hover {
@@ -1259,9 +1259,9 @@ nav {
         -o-align-items: center;
         -webkit-align-items: center;
         align-items: center;
-        -o-justify-content: flex-start;
-        -webkit-justify-content: flex-start;
-        justify-content: flex-start;
+        -o-justify-content: flex-end;
+        -webkit-justify-content: flex-end;
+        justify-content: flex-end;
         text-align: center;
         color: white;
         width: inherit;
@@ -1429,7 +1429,7 @@ nav {
         }
 
             .portfolio-item-inner:hover > .portfolio-item-button > a:hover {
-                color: #E9204F;
+                color: #AF3E58;
             }
 
 .portfolio-item-header {
@@ -1521,7 +1521,7 @@ nav {
         line-height: 25px;
         text-transform: uppercase;
         text-align: center;
-        color: #E9204F;
+        color: #AF3E58;
         -ms-transition: .5s;
         -o-transition: .5s;
         -webkit-transition: .5s;
@@ -1834,11 +1834,6 @@ nav {
     -ms-opacity: 0;
     opacity: 0;
     background: rgba(255, 255, 255, 0.8);
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
 }
 
 .md-show ~ .md-overlay {
@@ -1854,15 +1849,11 @@ nav {
     transform: scale(0.8);
     -ms-opacity: 0;
     opacity: 0;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
 }
 
 .md-show.md-effect-12 ~ .md-overlay {
     background-color: #ffffff;
+    transition: all 0.5s;
 }
 
 .md-effect-12 .md-content h3,
@@ -1877,6 +1868,7 @@ nav {
     transform: scale(1);
     -ms-opacity: 1;
     opacity: 1;
+    transition: all 0.5s;
 }
 
 .md-contact-form-send-captcha {
@@ -1898,7 +1890,6 @@ nav {
     z-index: -999999;
     opacity: 0;
 }
-
 
 /* Flags for lanuages */
 

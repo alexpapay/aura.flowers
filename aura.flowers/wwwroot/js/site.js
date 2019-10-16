@@ -4,6 +4,8 @@ window.addEventListener("load", () => {
 });
 
 window.onload = function () {
+    $('.md-modal').removeClass('md-show');
+
     var $recaptcha = document.querySelector('#g-recaptcha-response');
 
     if ($recaptcha) {
@@ -117,8 +119,6 @@ $(document).ready(function () {
     });
 
     // Modal windows:
-    $('.md-modal').removeClass('md-show');
-
     $('.md-trigger').on('click', function () {
         var productId = $(this).parent().find('input:hidden:first').attr('value');
 
