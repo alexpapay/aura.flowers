@@ -16,7 +16,7 @@ window.onload = function () {
 $(document).ready(function () {
     // Menu scroll:
     $(window).on('scroll', function () {
-        if ($(window).width() >= 1200) {
+        if ($(window).width() >= 1024) {
             if ($(window).scrollTop()) {
                 $('nav').addClass('black');
             } else {

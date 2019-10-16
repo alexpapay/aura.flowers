@@ -1941,155 +1941,52 @@ nav {
 
 
 /* Media: */
-
-@media (min-width: 576px) {
+@media (min-width: 1200px) {
 }
 
-@media(max-width: 576px) {
-    nav .menu ul li select {
-        background-color: #af3e58;
-        color: #ffffff;
-        margin: 25px;
+@media(max-width: 1200px) {
+    /*nav {
+        padding: 0px 30px 0 30px;
     }
 
-    .container-products .product-item {
-        width: 100%;
-    }
-
-    .product-item {
-        width: 100%;
-    }
-
-        .product-item .flip {
-            width: 100%;
+        nav .logo img {
+            height: 60px;
         }
 
-    .testimonials-box .image-box {
-        left: 20px;
-    }
-
-    .md-header a {
-        margin-top: 2.0rem;
-        font-size: 0.9rem;
-    }
-
-    .md-header h1 {
-        margin-top: 1.5em;
-        font-size: 1.75rem;
-        line-height: 1.5rem;
-    }
-
-        .md-header h1 span {
-            display: none;
+        nav .menu ul li select {
+            background-color: #af3e58;
+            color: #ffffff;
+            border: 2px solid #af3e58;
         }
 
-    .md-contact-form-send-captcha {
-        -o-justify-content: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        flex-direction: column;
+        nav .menu ul li a {
+            font-size: 1.0rem;
+            padding: 2px 7px;
+        }
+
+        nav .menu ul li select {
+            font-size: 1.0rem;
+            padding: 0.6rem 0.5rem 0.6rem;
+        }
+
+    .head-banner {
+        background-size: 650px;
+        background-position-y: bottom;
+    }*/
+
+    .container-header h2 {
+        max-width: 400px;
     }
 
-    .container-about-us-big-right {
-        padding: 0;
-        margin: 0 auto;
+    .container-about-us-big-left-image {
+        padding-top: 410px;
     }
-
-    .container-about-us-big-left {
-        padding: 0 0 25px 0;
-        margin: 0 auto;
-    }
-}
-
-@media (min-width: 768px) {
 }
 
 @media (min-width: 992px) {
 }
 
 @media(max-width: 992px) {
-    .container-about-us-header {
-        flex-direction: column;
-    }
-
-        .container-about-us-header .about-us-text-column {
-            -webkit-flex: 1;
-            -ms-flex: 1;
-            -o-flex: 1;
-            flex: 1;
-        }
-
-    .container-about-us-images {
-        flex-direction: column;
-    }
-
-    .container-about-us-big-right {
-        padding: 0;
-        width: 100%;
-    }
-
-    .container-about-us-big-left {
-        padding: 0 0 25px 0;
-    }
-
-    .container-products {
-        flex-direction: column;
-        -o-justify-content: space-between;
-        -webkit-justify-content: space-between;
-        justify-content: space-between;
-        -ms-align-items: center;
-        -o-align-items: center;
-        -webkit-align-items: center;
-        align-items: center;
-    }
-
-    .container-about-us-three-columns {
-        flex-direction: column;
-    }
-
-    .portfolio-item-outer {
-        height: 550px;
-    }
-
-    .footer-contacts-section {
-        flex-direction: column;
-        padding: 80px 0 80px 0;
-    }
-
-    .footer-contacts-section-address {
-        flex-direction: column;
-    }
-
-        .footer-contacts-section-address a {
-            color: #ffffff;
-        }
-
-    .testimonials-box:before {
-        left: 20px;
-    }
-
-    .testimonials-box:after {
-        right: 20px;
-    }
-
-    .md-content {
-        width: 80%;
-    }
-
-    .md-header a {
-        color: #ffffff;
-    }
-
-        .md-header a i {
-            color: #858585;
-            font-size: 1.75em;
-        }
-}
-
-@media (min-width: 1200px) {
-}
-
-@media(max-width: 1200px) {
     .container-header {
         background: rgba(255, 255, 255, 0.7);
         -ms-transition: 1s;
@@ -2123,7 +2020,7 @@ nav {
             -o-align-items: center;
             -webkit-align-items: center;
             align-items: center;
-            height: 100%;
+            height: 95%;
         }
 
     .menu-icon {
@@ -2227,7 +2124,136 @@ nav {
         margin: 5px;
     }
 
-    .container-about-us-big-left-image {
-        padding-top: 410px;
+    .container-about-us-header {
+        flex-direction: column;
+    }
+
+        .container-about-us-header .about-us-text-column {
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            -o-flex: 1;
+            flex: 1;
+        }
+
+    .container-about-us-images {
+        flex-direction: column;
+    }
+
+    .container-about-us-big-right {
+        padding: 0;
+        width: 100%;
+    }
+
+    .container-about-us-big-left {
+        padding: 0 0 25px 0;
+    }
+
+    .container-products {
+        flex-direction: column;
+        -o-justify-content: space-between;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        -ms-align-items: center;
+        -o-align-items: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .container-about-us-three-columns {
+        flex-direction: column;
+    }
+
+    .portfolio-item-outer {
+        height: 550px;
+    }
+
+    .footer-contacts-section {
+        flex-direction: column;
+        padding: 80px 0 80px 0;
+    }
+
+    .footer-contacts-section-address {
+        flex-direction: column;
+    }
+
+        .footer-contacts-section-address a {
+            color: #ffffff;
+        }
+
+    .testimonials-box:before {
+        left: 20px;
+    }
+
+    .testimonials-box:after {
+        right: 20px;
+    }
+
+    .md-content {
+        width: 80%;
+    }
+
+    .md-header a {
+        color: #ffffff;
+    }
+
+        .md-header a i {
+            color: #858585;
+            font-size: 1.75em;
+        }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 576px) {
+}
+
+@media(max-width: 576px) {
+    .container-products .product-item {
+        width: 100%;
+    }
+
+    .product-item {
+        width: 100%;
+    }
+
+        .product-item .flip {
+            width: 100%;
+        }
+
+    .testimonials-box .image-box {
+        left: 20px;
+    }
+
+    .md-header a {
+        margin-top: 2.0rem;
+        font-size: 0.9rem;
+    }
+
+    .md-header h1 {
+        margin-top: 1.5em;
+        font-size: 1.75rem;
+        line-height: 1.5rem;
+    }
+
+        .md-header h1 span {
+            display: none;
+        }
+
+    .md-contact-form-send-captcha {
+        -o-justify-content: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container-about-us-big-right {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .container-about-us-big-left {
+        padding: 0 0 25px 0;
+        margin: 0 auto;
     }
 }
