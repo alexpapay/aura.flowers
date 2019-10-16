@@ -1945,48 +1945,6 @@ nav {
 }
 
 @media(max-width: 1200px) {
-    /*nav {
-        padding: 0px 30px 0 30px;
-    }
-
-        nav .logo img {
-            height: 60px;
-        }
-
-        nav .menu ul li select {
-            background-color: #af3e58;
-            color: #ffffff;
-            border: 2px solid #af3e58;
-        }
-
-        nav .menu ul li a {
-            font-size: 1.0rem;
-            padding: 2px 7px;
-        }
-
-        nav .menu ul li select {
-            font-size: 1.0rem;
-            padding: 0.6rem 0.5rem 0.6rem;
-        }
-
-    .head-banner {
-        background-size: 650px;
-        background-position-y: bottom;
-    }*/
-
-    .container-header h2 {
-        max-width: 400px;
-    }
-
-    .container-about-us-big-left-image {
-        padding-top: 410px;
-    }
-}
-
-@media (min-width: 992px) {
-}
-
-@media(max-width: 992px) {
     .container-header {
         background: rgba(255, 255, 255, 0.7);
         -ms-transition: 1s;
@@ -2021,6 +1979,13 @@ nav {
             -webkit-align-items: center;
             align-items: center;
             height: 95%;
+        }
+
+        nav .menu ul li select {
+            background-color: #af3e58;
+            color: #ffffff;
+            margin: 25px;
+            border: 2px solid #af3e58;
         }
 
     .menu-icon {
@@ -2124,6 +2089,19 @@ nav {
         margin: 5px;
     }
 
+    .container-header h2 {
+        max-width: 400px;
+    }
+
+    .container-about-us-big-left-image {
+        padding-top: 410px;
+    }
+}
+
+@media (min-width: 992px) {
+}
+
+@media(max-width: 992px) {
     .container-about-us-header {
         flex-direction: column;
     }
