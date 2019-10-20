@@ -77,8 +77,11 @@ $(document).ready(function () {
             0: {
                 items: 1
             },
-            600: {
+            576: {
                 items: 1
+            },
+            992: {
+                items: 2
             },
             1200: {
                 items: 3
