@@ -367,6 +367,9 @@ form .form-button {
             border-color: #AF3E58;
         }
 
+.sashe-image {
+    height: 60px;
+}
 
 .menu-icon img {
     display: none;
@@ -977,6 +980,12 @@ nav {
         flex: 0.75;
     }
 
+        .container-about-us-header .about-us-text-column p {
+            font-size: 1.25em;
+            line-height: 1.25em;
+            font-weight: bold;
+        }
+
 .container-about-us-images {
     padding: 0;
     margin: 0;
@@ -1014,7 +1023,7 @@ nav {
     background-repeat: no-repeat;
     -ms-background-position: center;
     background-position: center;
-    padding-top: 375px;
+    padding-top: 475px;
     -webkit-filter: grayscale(20%);
     -moz-filter: grayscale(20%);
     filter: grayscale(20%);
@@ -1046,7 +1055,7 @@ nav {
     background-repeat: no-repeat;
     -ms-background-position: center;
     background-position: center;
-    padding-top: 118px;
+    padding-top: 165px;
     -webkit-filter: grayscale(30%);
     -moz-filter: grayscale(30%);
     filter: grayscale(30%);
@@ -1071,10 +1080,10 @@ nav {
     background-size: cover;
     -ms-background-repeat: no-repeat;
     background-repeat: no-repeat;
-    -ms-background-position: center;
-    background-position: center;
+    -ms-background-position: top;
+    background-position: top;
     margin-top: 25px;
-    padding-top: 118px;
+    padding-top: 170px;
     -webkit-filter: grayscale(30%);
     -moz-filter: grayscale(30%);
     filter: grayscale(30%);
@@ -2159,9 +2168,9 @@ nav {
             width: 275px;
         }
 
-        .container-about-us-three-columns {
-            flex-direction: column;
-        }
+    .container-about-us-three-columns {
+        flex-direction: column;
+    }
 
     .portfolio-item-outer {
         height: 550px;

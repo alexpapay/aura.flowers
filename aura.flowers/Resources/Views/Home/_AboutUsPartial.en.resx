@@ -127,7 +127,7 @@
     <value>Our Philosophy</value>
   </data>
   <data name="about-us-our-philosophy-text" xml:space="preserve">
-    <value>To give joy and good mood! Nothing is impossible. We are always glad to see you and ready to realize your interior fantasies. Each item is made with love.</value>
+    <value>To give joy and good mood! Nothing is impossible! We are always glad to see you and ready to realize your any interior fantasies. Each item is made with love.</value>
   </data>
   <data name="about-us-our-studio-header" xml:space="preserve">
     <value>Our Studio</value>
@@ -154,12 +154,15 @@
     <value>About Us</value>
   </data>
   <data name="about-us-title-text" xml:space="preserve">
-    <value>Are you looking for a great solution for the interior of your flat, house, office or shop? We have it!</value>
+    <value>Are you looking for a great solution for the interior of your flat, house, office or shop? </value>
+  </data>
+  <data name="about-us-title-text-ono" xml:space="preserve">
+    <value>We have it!</value>
   </data>
   <data name="about-us-who-we-are-header" xml:space="preserve">
     <value>Who We Are</value>
   </data>
   <data name="about-us-who-we-are-text" xml:space="preserve">
-    <value>We are AuraDecor Interior Studio in Bratislava! We specialize in decorating of events and spaces  for any purpose. We make wonderful big compositions.</value>
+    <value>We are AURA Decor Interior Studio in Bratislava! We specialize in decorating of events and spaces  for any purpose. We make wonderful big compositions.</value>
   </data>
 </root>

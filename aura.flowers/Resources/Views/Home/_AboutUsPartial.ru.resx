@@ -127,7 +127,7 @@
     <value>Наша Философия</value>
   </data>
   <data name="about-us-our-philosophy-text" xml:space="preserve">
-    <value>Дарить радость и отличное настроение! Нет ничего невозможного. Мы всегда Вам рады и готовы воплотить Ваши интерьерные фантазии. Каждое изделие выполнено с любовью.</value>
+    <value>Дарить радость и отличное настроение! Нет ничего невозможного! Мы всегда Вам рады и готовы воплотить Ваши любые интерьерные фантазии. Каждое изделие выполнено с любовью.</value>
   </data>
   <data name="about-us-our-studio-header" xml:space="preserve">
     <value>Наша Студия</value>
@@ -148,18 +148,21 @@
     <value>Огромные фотостены из наших цветов</value>
   </data>
   <data name="about-us-subtitle" xml:space="preserve">
-    <value>Цветы, украшающие ваше окружение</value>
+    <value>Цветы, которые сделают Вас счастливыми надолго.</value>
   </data>
   <data name="about-us-title" xml:space="preserve">
     <value>О Нас</value>
   </data>
   <data name="about-us-title-text" xml:space="preserve">
-    <value>Хотите отличное решение для интерьера квартиры, дома, офиса и  магазина? Оно есть у нас!</value>
+    <value>Хотите отличное решение для интерьера квартиры, дома, офиса и  магазина?</value>
+  </data>
+  <data name="about-us-title-text-ono" xml:space="preserve">
+    <value>Оно есть у нас!</value>
   </data>
   <data name="about-us-who-we-are-header" xml:space="preserve">
     <value>Кто Мы</value>
   </data>
   <data name="about-us-who-we-are-text" xml:space="preserve">
-    <value>Мы студия интерьерного дизайна AuraDecor в Братиславе! Мы специализируемся на оформлении мероприятий и помещений для любых целей. Мы делаем прекрасные ростовые композиции.</value>
+    <value>Мы студия интерьерного дизайна AURA Decor в Братиславе! Мы специализируемся на оформлении мероприятий и помещений для любых целей. Мы делаем прекрасные большие композиции.</value>
   </data>
 </root>

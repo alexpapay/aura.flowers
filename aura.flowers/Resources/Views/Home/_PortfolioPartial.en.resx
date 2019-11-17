@@ -120,6 +120,21 @@
   <data name="portfolio-item-description-1" xml:space="preserve">
     <value>It will give a feeling of calm and tranquility.</value>
   </data>
+  <data name="portfolio-item-description-10" xml:space="preserve">
+    <value>Will create coziness and comfort in your home.</value>
+  </data>
+  <data name="portfolio-item-description-11" xml:space="preserve">
+    <value>White, soft and chic.</value>
+  </data>
+  <data name="portfolio-item-description-12" xml:space="preserve">
+    <value>Black color is paradoxical.</value>
+  </data>
+  <data name="portfolio-item-description-13" xml:space="preserve">
+    <value>Style for a photo shoot.</value>
+  </data>
+  <data name="portfolio-item-description-14" xml:space="preserve">
+    <value>Give the moment of a fairy tale.</value>
+  </data>
   <data name="portfolio-item-description-2" xml:space="preserve">
     <value>A delicate and bright flower will decorate any room.</value>
   </data>
@@ -141,8 +156,26 @@
   <data name="portfolio-item-description-8" xml:space="preserve">
     <value>Symbol of greatness and power of life.</value>
   </data>
+  <data name="portfolio-item-description-9" xml:space="preserve">
+    <value>Who are you? Swan or angel?</value>
+  </data>
   <data name="portfolio-item-header-1" xml:space="preserve">
     <value>Sea mood</value>
+  </data>
+  <data name="portfolio-item-header-10" xml:space="preserve">
+    <value>Ranunculus</value>
+  </data>
+  <data name="portfolio-item-header-11" xml:space="preserve">
+    <value>Peony</value>
+  </data>
+  <data name="portfolio-item-header-12" xml:space="preserve">
+    <value>Photozone</value>
+  </data>
+  <data name="portfolio-item-header-13" xml:space="preserve">
+    <value>Hat</value>
+  </data>
+  <data name="portfolio-item-header-14" xml:space="preserve">
+    <value>Photoshoot</value>
   </data>
   <data name="portfolio-item-header-2" xml:space="preserve">
     <value>Camellia</value>
@@ -164,6 +197,9 @@
   </data>
   <data name="portfolio-item-header-8" xml:space="preserve">
     <value>Dahlia</value>
+  </data>
+  <data name="portfolio-item-header-9" xml:space="preserve">
+    <value>Wings</value>
   </data>
   <data name="portfolio-item-order-button" xml:space="preserve">
     <value>Order it!</value>

@@ -120,6 +120,21 @@
   <data name="portfolio-item-description-1" xml:space="preserve">
     <value>Подарит ощущение спокойствия и умиротворения.</value>
   </data>
+  <data name="portfolio-item-description-10" xml:space="preserve">
+    <value>Создаст уют и комфорт в Вашем доме.</value>
+  </data>
+  <data name="portfolio-item-description-11" xml:space="preserve">
+    <value>Белый, нежный и шикарный.</value>
+  </data>
+  <data name="portfolio-item-description-12" xml:space="preserve">
+    <value>Черный цвет парадоксален.</value>
+  </data>
+  <data name="portfolio-item-description-13" xml:space="preserve">
+    <value>Образ для фотосессии.</value>
+  </data>
+  <data name="portfolio-item-description-14" xml:space="preserve">
+    <value>Подарите момент сказки.</value>
+  </data>
   <data name="portfolio-item-description-2" xml:space="preserve">
     <value>Нежный и эффектный цветок украсит любое помещение.</value>
   </data>
@@ -141,8 +156,26 @@
   <data name="portfolio-item-description-8" xml:space="preserve">
     <value>Символ величия и силы жизни.</value>
   </data>
+  <data name="portfolio-item-description-9" xml:space="preserve">
+    <value>Кто ты, лебедь или ангел?</value>
+  </data>
   <data name="portfolio-item-header-1" xml:space="preserve">
     <value>Морское настроение</value>
+  </data>
+  <data name="portfolio-item-header-10" xml:space="preserve">
+    <value>Ранункулюс</value>
+  </data>
+  <data name="portfolio-item-header-11" xml:space="preserve">
+    <value>Пион</value>
+  </data>
+  <data name="portfolio-item-header-12" xml:space="preserve">
+    <value>Фотозона</value>
+  </data>
+  <data name="portfolio-item-header-13" xml:space="preserve">
+    <value>Шляпка</value>
+  </data>
+  <data name="portfolio-item-header-14" xml:space="preserve">
+    <value>Фотосессии</value>
   </data>
   <data name="portfolio-item-header-2" xml:space="preserve">
     <value>Камелия</value>
@@ -164,6 +197,9 @@
   </data>
   <data name="portfolio-item-header-8" xml:space="preserve">
     <value>Георгин</value>
+  </data>
+  <data name="portfolio-item-header-9" xml:space="preserve">
+    <value>Крылья</value>
   </data>
   <data name="portfolio-item-order-button" xml:space="preserve">
     <value>Заказать</value>

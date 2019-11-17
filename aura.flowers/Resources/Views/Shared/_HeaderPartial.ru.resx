@@ -120,4 +120,7 @@
   <data name="header-start-button" xml:space="preserve">
     <value>Начнем Работу</value>
   </data>
+  <data name="header-sub-logo-text" xml:space="preserve">
+    <value>Большие цветы и декорации ручной работы.</value>
+  </data>
 </root>
