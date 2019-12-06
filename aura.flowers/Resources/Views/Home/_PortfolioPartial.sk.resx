@@ -118,96 +118,96 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="portfolio-item-description-1" xml:space="preserve">
-    <value>Подарит ощущение спокойствия и умиротворения.</value>
+    <value>Daruje pocit pokoja a rovnováhy.</value>
   </data>
   <data name="portfolio-item-description-10" xml:space="preserve">
-    <value>Создаст уют и комфорт в Вашем доме.</value>
+    <value>Zútulní a vytvorí pohodlie vo vašej domácnosti.</value>
   </data>
   <data name="portfolio-item-description-11" xml:space="preserve">
-    <value>Белый, нежный и шикарный.</value>
+    <value>Biela, nežná a elegantná.</value>
   </data>
   <data name="portfolio-item-description-12" xml:space="preserve">
-    <value>Черный цвет - экстравагантная классика.</value>
+    <value>Čierna farba je extravagantná klasika.</value>
   </data>
   <data name="portfolio-item-description-13" xml:space="preserve">
-    <value>Образ для фотосессии.</value>
+    <value>Jedinečný obraz na fotenie.</value>
   </data>
   <data name="portfolio-item-description-14" xml:space="preserve">
-    <value>Подарите момент сказки.</value>
+    <value>Darujte rozprávkový moment.</value>
   </data>
   <data name="portfolio-item-description-2" xml:space="preserve">
-    <value>Нежный и эффектный цветок украсит любое помещение.</value>
+    <value>Jemná a veľkolepá kvetina ozdobí každú miestnosť.</value>
   </data>
   <data name="portfolio-item-description-3" xml:space="preserve">
-    <value>Яркий элемент в интерьере поднимает настроение.</value>
+    <value>Svetlý prvok v interiéri rozveselí.</value>
   </data>
   <data name="portfolio-item-description-4" xml:space="preserve">
-    <value>Сказочный цветок для принцесс.</value>
+    <value>Rozprávkový kvet pre princezny.</value>
   </data>
   <data name="portfolio-item-description-5" xml:space="preserve">
-    <value>Создаст уют и комфорт в Вашем доме.</value>
+    <value>Zútulní a vytvorí pohodlie vo vašej domácnosti.</value>
   </data>
   <data name="portfolio-item-description-6" xml:space="preserve">
-    <value>Добавьте красоту и поэтичность в свой интерьер.</value>
+    <value>Pridajte do svojho interiéru krásu a poéziu.</value>
   </data>
   <data name="portfolio-item-description-7" xml:space="preserve">
-    <value>Новогодний декор.</value>
+    <value>Novoročná výzdoba.</value>
   </data>
   <data name="portfolio-item-description-8" xml:space="preserve">
-    <value>Символ величия и силы жизни.</value>
+    <value>Symbol veľkoleposti a sily života.</value>
   </data>
   <data name="portfolio-item-description-9" xml:space="preserve">
-    <value>Кто ты, лебедь или ангел?</value>
+    <value>Kto si? Labuť alebo anjel?</value>
   </data>
   <data name="portfolio-item-header-1" xml:space="preserve">
-    <value>Морское настроение</value>
+    <value>Morská nálada</value>
   </data>
   <data name="portfolio-item-header-10" xml:space="preserve">
-    <value>Ранункулюс-Лампа</value>
+    <value>Lampa - Iskerník</value>
   </data>
   <data name="portfolio-item-header-11" xml:space="preserve">
-    <value>Пион</value>
+    <value>Pivonka</value>
   </data>
   <data name="portfolio-item-header-12" xml:space="preserve">
-    <value>Фотозона</value>
+    <value>Foto zóna</value>
   </data>
   <data name="portfolio-item-header-13" xml:space="preserve">
-    <value>Шляпка</value>
+    <value>Klobúčik</value>
   </data>
   <data name="portfolio-item-header-14" xml:space="preserve">
-    <value>Фотосессии</value>
+    <value>Fotenie</value>
   </data>
   <data name="portfolio-item-header-2" xml:space="preserve">
-    <value>Камелия</value>
+    <value>Camellia</value>
   </data>
   <data name="portfolio-item-header-3" xml:space="preserve">
-    <value>Ананас-Лампа</value>
+    <value>Ananásová lampa</value>
   </data>
   <data name="portfolio-item-header-4" xml:space="preserve">
-    <value>Фуксия</value>
+    <value>Fuchsia</value>
   </data>
   <data name="portfolio-item-header-5" xml:space="preserve">
-    <value>Пион-Лампа</value>
+    <value>Lampa - Pivonka</value>
   </data>
   <data name="portfolio-item-header-6" xml:space="preserve">
-    <value>Гербера</value>
+    <value>Gerbera</value>
   </data>
   <data name="portfolio-item-header-7" xml:space="preserve">
-    <value>Шишка</value>
+    <value>Šiška</value>
   </data>
   <data name="portfolio-item-header-8" xml:space="preserve">
-    <value>Георгин</value>
+    <value>Georgína</value>
   </data>
   <data name="portfolio-item-header-9" xml:space="preserve">
-    <value>Крылья</value>
+    <value>Krídla</value>
   </data>
   <data name="portfolio-item-order-button" xml:space="preserve">
-    <value>Заказать</value>
+    <value>Objednať</value>
   </data>
   <data name="portfolio-subtitle" xml:space="preserve">
-    <value>Сделано нами для вас</value>
+    <value>Vytvorili sme pre vás</value>
   </data>
   <data name="portfolio-title" xml:space="preserve">
-    <value>Портфолио</value>
+    <value>Portfólio</value>
   </data>
 </root>

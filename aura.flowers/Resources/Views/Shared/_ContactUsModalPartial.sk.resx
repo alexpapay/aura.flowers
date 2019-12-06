@@ -117,97 +117,52 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="portfolio-item-description-1" xml:space="preserve">
-    <value>Подарит ощущение спокойствия и умиротворения.</value>
+  <data name="contact-us-backend-validation" xml:space="preserve">
+    <value>Pri odosielaní formy sa vyskytla chyba. Skúste nám poslať znova alebo e-mailom na adresu info@aura.flowers.</value>
   </data>
-  <data name="portfolio-item-description-10" xml:space="preserve">
-    <value>Создаст уют и комфорт в Вашем доме.</value>
+  <data name="contact-us-email" xml:space="preserve">
+    <value>Pošta</value>
   </data>
-  <data name="portfolio-item-description-11" xml:space="preserve">
-    <value>Белый, нежный и шикарный.</value>
+  <data name="contact-us-message" xml:space="preserve">
+    <value>Správa (max. 3000 znakov)</value>
   </data>
-  <data name="portfolio-item-description-12" xml:space="preserve">
-    <value>Черный цвет - экстравагантная классика.</value>
+  <data name="contact-us-name" xml:space="preserve">
+    <value>Meno</value>
   </data>
-  <data name="portfolio-item-description-13" xml:space="preserve">
-    <value>Образ для фотосессии.</value>
+  <data name="contact-us-product" xml:space="preserve">
+    <value>Vybraný produkt</value>
   </data>
-  <data name="portfolio-item-description-14" xml:space="preserve">
-    <value>Подарите момент сказки.</value>
+  <data name="contact-us-product-bigflowers" xml:space="preserve">
+    <value>Veľké aranžmány z kvetov</value>
   </data>
-  <data name="portfolio-item-description-2" xml:space="preserve">
-    <value>Нежный и эффектный цветок украсит любое помещение.</value>
+  <data name="contact-us-product-framework" xml:space="preserve">
+    <value>Interiérové rámy</value>
   </data>
-  <data name="portfolio-item-description-3" xml:space="preserve">
-    <value>Яркий элемент в интерьере поднимает настроение.</value>
+  <data name="contact-us-product-lamps" xml:space="preserve">
+    <value>Osvetlenie interiéru</value>
   </data>
-  <data name="portfolio-item-description-4" xml:space="preserve">
-    <value>Сказочный цветок для принцесс.</value>
+  <data name="contact-us-product-material" xml:space="preserve">
+    <value>Materiál. ISOLON a foam.</value>
   </data>
-  <data name="portfolio-item-description-5" xml:space="preserve">
-    <value>Создаст уют и комфорт в Вашем доме.</value>
+  <data name="contact-us-product-select" xml:space="preserve">
+    <value>--- Vyberte si produkt zo zoznamu ---</value>
   </data>
-  <data name="portfolio-item-description-6" xml:space="preserve">
-    <value>Добавьте красоту и поэтичность в свой интерьер.</value>
+  <data name="contact-us-product-walls" xml:space="preserve">
+    <value>Fotostena</value>
   </data>
-  <data name="portfolio-item-description-7" xml:space="preserve">
-    <value>Новогодний декор.</value>
+  <data name="contact-us-product-wings" xml:space="preserve">
+    <value>Krídla</value>
   </data>
-  <data name="portfolio-item-description-8" xml:space="preserve">
-    <value>Символ величия и силы жизни.</value>
+  <data name="contact-us-send" xml:space="preserve">
+    <value>Poslať správu</value>
   </data>
-  <data name="portfolio-item-description-9" xml:space="preserve">
-    <value>Кто ты, лебедь или ангел?</value>
+  <data name="contact-us-subtitle" xml:space="preserve">
+    <value>A začneme spolupracovať</value>
   </data>
-  <data name="portfolio-item-header-1" xml:space="preserve">
-    <value>Морское настроение</value>
+  <data name="contact-us-title" xml:space="preserve">
+    <value>Napíšte nám</value>
   </data>
-  <data name="portfolio-item-header-10" xml:space="preserve">
-    <value>Ранункулюс-Лампа</value>
-  </data>
-  <data name="portfolio-item-header-11" xml:space="preserve">
-    <value>Пион</value>
-  </data>
-  <data name="portfolio-item-header-12" xml:space="preserve">
-    <value>Фотозона</value>
-  </data>
-  <data name="portfolio-item-header-13" xml:space="preserve">
-    <value>Шляпка</value>
-  </data>
-  <data name="portfolio-item-header-14" xml:space="preserve">
-    <value>Фотосессии</value>
-  </data>
-  <data name="portfolio-item-header-2" xml:space="preserve">
-    <value>Камелия</value>
-  </data>
-  <data name="portfolio-item-header-3" xml:space="preserve">
-    <value>Ананас-Лампа</value>
-  </data>
-  <data name="portfolio-item-header-4" xml:space="preserve">
-    <value>Фуксия</value>
-  </data>
-  <data name="portfolio-item-header-5" xml:space="preserve">
-    <value>Пион-Лампа</value>
-  </data>
-  <data name="portfolio-item-header-6" xml:space="preserve">
-    <value>Гербера</value>
-  </data>
-  <data name="portfolio-item-header-7" xml:space="preserve">
-    <value>Шишка</value>
-  </data>
-  <data name="portfolio-item-header-8" xml:space="preserve">
-    <value>Георгин</value>
-  </data>
-  <data name="portfolio-item-header-9" xml:space="preserve">
-    <value>Крылья</value>
-  </data>
-  <data name="portfolio-item-order-button" xml:space="preserve">
-    <value>Заказать</value>
-  </data>
-  <data name="portfolio-subtitle" xml:space="preserve">
-    <value>Сделано нами для вас</value>
-  </data>
-  <data name="portfolio-title" xml:space="preserve">
-    <value>Портфолио</value>
+  <data name="contact-us-title-close" xml:space="preserve">
+    <value>Zavrieť</value>
   </data>
 </root>

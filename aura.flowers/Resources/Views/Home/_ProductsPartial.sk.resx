@@ -117,97 +117,67 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="portfolio-item-description-1" xml:space="preserve">
-    <value>Подарит ощущение спокойствия и умиротворения.</value>
+  <data name="products-bigflowers-description" xml:space="preserve">
+    <value>Ideálne na vytvorenie neobvyklého a magického prostredia. Foto zóny na akciách, interiér foto štúdií, obchodných a kancelárskych priestorov.</value>
   </data>
-  <data name="portfolio-item-description-10" xml:space="preserve">
-    <value>Создаст уют и комфорт в Вашем доме.</value>
+  <data name="products-bigflowers-header" xml:space="preserve">
+    <value>Veľké aranžmány z kvetov </value>
   </data>
-  <data name="portfolio-item-description-11" xml:space="preserve">
-    <value>Белый, нежный и шикарный.</value>
+  <data name="products-framework-description" xml:space="preserve">
+    <value>Pridajte farbu do svojho života! Vytvorte v dome útulnú atmosféru a nastavte sa na pozitívne myšlienky.</value>
   </data>
-  <data name="portfolio-item-description-12" xml:space="preserve">
-    <value>Черный цвет - экстравагантная классика.</value>
+  <data name="products-framework-header" xml:space="preserve">
+    <value>Interiérové rámy</value>
   </data>
-  <data name="portfolio-item-description-13" xml:space="preserve">
-    <value>Образ для фотосессии.</value>
+  <data name="products-lamps-description" xml:space="preserve">
+    <value>Originálna dekorácia vášho domu. Zmena farieb pomocou diaľkového ovládača. Napájané batériami, vďaka ktorým je lampa mobilná, pohodlná a bezpečná. Kvetinová lampa u vás doma vytvorí pohodlie a dobrú náladu.</value>
   </data>
-  <data name="portfolio-item-description-14" xml:space="preserve">
-    <value>Подарите момент сказки.</value>
+  <data name="products-lamps-header" xml:space="preserve">
+    <value>Osvetlenie interiéru</value>
   </data>
-  <data name="portfolio-item-description-2" xml:space="preserve">
-    <value>Нежный и эффектный цветок украсит любое помещение.</value>
+  <data name="products-material-description" xml:space="preserve">
+    <value>ISOLON a foam.</value>
   </data>
-  <data name="portfolio-item-description-3" xml:space="preserve">
-    <value>Яркий элемент в интерьере поднимает настроение.</value>
+  <data name="products-material-description-1" xml:space="preserve">
+    <value>ISOLON - hypoalergénny materiá</value>
   </data>
-  <data name="portfolio-item-description-4" xml:space="preserve">
-    <value>Сказочный цветок для принцесс.</value>
+  <data name="products-material-description-2" xml:space="preserve">
+    <value>Jednoduchá údržba</value>
   </data>
-  <data name="portfolio-item-description-5" xml:space="preserve">
-    <value>Создаст уют и комфорт в Вашем доме.</value>
+  <data name="products-material-description-3" xml:space="preserve">
+    <value>Pri čistení, môžete použiť jemnú sprchu</value>
   </data>
-  <data name="portfolio-item-description-6" xml:space="preserve">
-    <value>Добавьте красоту и поэтичность в свой интерьер.</value>
+  <data name="products-material-description-4" xml:space="preserve">
+    <value>Odolný materiál</value>
   </data>
-  <data name="portfolio-item-description-7" xml:space="preserve">
-    <value>Новогодний декор.</value>
+  <data name="products-material-description-5" xml:space="preserve">
+    <value>Môže mať rôzne farby</value>
   </data>
-  <data name="portfolio-item-description-8" xml:space="preserve">
-    <value>Символ величия и силы жизни.</value>
+  <data name="products-material-header" xml:space="preserve">
+    <value>Materiál. ISOLON a foam.</value>
   </data>
-  <data name="portfolio-item-description-9" xml:space="preserve">
-    <value>Кто ты, лебедь или ангел?</value>
+  <data name="products-order-button" xml:space="preserve">
+    <value>Objednať</value>
   </data>
-  <data name="portfolio-item-header-1" xml:space="preserve">
-    <value>Морское настроение</value>
+  <data name="products-order-rental-sticker" xml:space="preserve">
+    <value>(na objednávku / prenájom)</value>
   </data>
-  <data name="portfolio-item-header-10" xml:space="preserve">
-    <value>Ранункулюс-Лампа</value>
+  <data name="products-subtitle" xml:space="preserve">
+    <value>Pracujeme pre vás</value>
   </data>
-  <data name="portfolio-item-header-11" xml:space="preserve">
-    <value>Пион</value>
+  <data name="products-title" xml:space="preserve">
+    <value>Výrobky</value>
   </data>
-  <data name="portfolio-item-header-12" xml:space="preserve">
-    <value>Фотозона</value>
+  <data name="products-walls-description" xml:space="preserve">
+    <value>Ideálne na vytvorenie neobvyklého a magického prostredia. Foto zóny na akciách, interiér foto štúdií, obchodných a kancelárskych priestorov.</value>
   </data>
-  <data name="portfolio-item-header-13" xml:space="preserve">
-    <value>Шляпка</value>
+  <data name="products-walls-header" xml:space="preserve">
+    <value>Fotostena</value>
   </data>
-  <data name="portfolio-item-header-14" xml:space="preserve">
-    <value>Фотосессии</value>
+  <data name="products-wings-description" xml:space="preserve">
+    <value>Trend dizajnérskych riešení. Ideálny výber na neobyčajné fotenie.</value>
   </data>
-  <data name="portfolio-item-header-2" xml:space="preserve">
-    <value>Камелия</value>
-  </data>
-  <data name="portfolio-item-header-3" xml:space="preserve">
-    <value>Ананас-Лампа</value>
-  </data>
-  <data name="portfolio-item-header-4" xml:space="preserve">
-    <value>Фуксия</value>
-  </data>
-  <data name="portfolio-item-header-5" xml:space="preserve">
-    <value>Пион-Лампа</value>
-  </data>
-  <data name="portfolio-item-header-6" xml:space="preserve">
-    <value>Гербера</value>
-  </data>
-  <data name="portfolio-item-header-7" xml:space="preserve">
-    <value>Шишка</value>
-  </data>
-  <data name="portfolio-item-header-8" xml:space="preserve">
-    <value>Георгин</value>
-  </data>
-  <data name="portfolio-item-header-9" xml:space="preserve">
-    <value>Крылья</value>
-  </data>
-  <data name="portfolio-item-order-button" xml:space="preserve">
-    <value>Заказать</value>
-  </data>
-  <data name="portfolio-subtitle" xml:space="preserve">
-    <value>Сделано нами для вас</value>
-  </data>
-  <data name="portfolio-title" xml:space="preserve">
-    <value>Портфолио</value>
+  <data name="products-wings-header" xml:space="preserve">
+    <value>Krídla</value>
   </data>
 </root>

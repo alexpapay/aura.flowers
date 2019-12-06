@@ -1680,6 +1680,10 @@ nav {
     -o-align-content: center;
     -webkit-align-content: center;
     align-content: center;
+    flex-wrap: wrap;
+    -o-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
 }
 
     .footer-contacts-social .social-button.facebook,

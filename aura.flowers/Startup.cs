@@ -47,9 +47,9 @@ namespace aura.flowers
 
             CultureInfo[] supportedCultures = {
                     new CultureInfo("en-US"),
-                    new CultureInfo("ru-RU")
+                    new CultureInfo("ru-RU"),
                     //new CultureInfo("de-DE"),
-                    //new CultureInfo("sk-SK"),
+                    new CultureInfo("sk-SK")
             };
 
             services.Configure<RequestLocalizationOptions>(options =>

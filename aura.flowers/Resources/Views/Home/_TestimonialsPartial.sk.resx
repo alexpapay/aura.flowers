@@ -117,97 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="portfolio-item-description-1" xml:space="preserve">
-    <value>Подарит ощущение спокойствия и умиротворения.</value>
+  <data name="testimonial-one-author" xml:space="preserve">
+    <value>Tatiana</value>
   </data>
-  <data name="portfolio-item-description-10" xml:space="preserve">
-    <value>Создаст уют и комфорт в Вашем доме.</value>
+  <data name="testimonial-one-company" xml:space="preserve">
+    <value>Apartmán Bratislava</value>
   </data>
-  <data name="portfolio-item-description-11" xml:space="preserve">
-    <value>Белый, нежный и шикарный.</value>
+  <data name="testimonial-one-text" xml:space="preserve">
+    <value>Also in our apartment there is a magic flower. Thank. Now it will create coziness for our customers.</value>
   </data>
-  <data name="portfolio-item-description-12" xml:space="preserve">
-    <value>Черный цвет - экстравагантная классика.</value>
+  <data name="testimonial-two-author" xml:space="preserve">
+    <value>Aljona Kurotova</value>
   </data>
-  <data name="portfolio-item-description-13" xml:space="preserve">
-    <value>Образ для фотосессии.</value>
+  <data name="testimonial-two-company" xml:space="preserve">
+    <value>SlovakiaInvest</value>
   </data>
-  <data name="portfolio-item-description-14" xml:space="preserve">
-    <value>Подарите момент сказки.</value>
+  <data name="testimonial-two-text" xml:space="preserve">
+    <value>Takže originálne riešenie v interiéri kancelárie. Kvety z Aury harmonicky zapadajú do miestnosti s prísnym štýlom a vytvárajú rozprávkovú atmosféru v sále jazykovej školy ICan. Ďakujem.</value>
   </data>
-  <data name="portfolio-item-description-2" xml:space="preserve">
-    <value>Нежный и эффектный цветок украсит любое помещение.</value>
+  <data name="testimonials-subtitle" xml:space="preserve">
+    <value>Naši zákazníci z celého sveta</value>
   </data>
-  <data name="portfolio-item-description-3" xml:space="preserve">
-    <value>Яркий элемент в интерьере поднимает настроение.</value>
-  </data>
-  <data name="portfolio-item-description-4" xml:space="preserve">
-    <value>Сказочный цветок для принцесс.</value>
-  </data>
-  <data name="portfolio-item-description-5" xml:space="preserve">
-    <value>Создаст уют и комфорт в Вашем доме.</value>
-  </data>
-  <data name="portfolio-item-description-6" xml:space="preserve">
-    <value>Добавьте красоту и поэтичность в свой интерьер.</value>
-  </data>
-  <data name="portfolio-item-description-7" xml:space="preserve">
-    <value>Новогодний декор.</value>
-  </data>
-  <data name="portfolio-item-description-8" xml:space="preserve">
-    <value>Символ величия и силы жизни.</value>
-  </data>
-  <data name="portfolio-item-description-9" xml:space="preserve">
-    <value>Кто ты, лебедь или ангел?</value>
-  </data>
-  <data name="portfolio-item-header-1" xml:space="preserve">
-    <value>Морское настроение</value>
-  </data>
-  <data name="portfolio-item-header-10" xml:space="preserve">
-    <value>Ранункулюс-Лампа</value>
-  </data>
-  <data name="portfolio-item-header-11" xml:space="preserve">
-    <value>Пион</value>
-  </data>
-  <data name="portfolio-item-header-12" xml:space="preserve">
-    <value>Фотозона</value>
-  </data>
-  <data name="portfolio-item-header-13" xml:space="preserve">
-    <value>Шляпка</value>
-  </data>
-  <data name="portfolio-item-header-14" xml:space="preserve">
-    <value>Фотосессии</value>
-  </data>
-  <data name="portfolio-item-header-2" xml:space="preserve">
-    <value>Камелия</value>
-  </data>
-  <data name="portfolio-item-header-3" xml:space="preserve">
-    <value>Ананас-Лампа</value>
-  </data>
-  <data name="portfolio-item-header-4" xml:space="preserve">
-    <value>Фуксия</value>
-  </data>
-  <data name="portfolio-item-header-5" xml:space="preserve">
-    <value>Пион-Лампа</value>
-  </data>
-  <data name="portfolio-item-header-6" xml:space="preserve">
-    <value>Гербера</value>
-  </data>
-  <data name="portfolio-item-header-7" xml:space="preserve">
-    <value>Шишка</value>
-  </data>
-  <data name="portfolio-item-header-8" xml:space="preserve">
-    <value>Георгин</value>
-  </data>
-  <data name="portfolio-item-header-9" xml:space="preserve">
-    <value>Крылья</value>
-  </data>
-  <data name="portfolio-item-order-button" xml:space="preserve">
-    <value>Заказать</value>
-  </data>
-  <data name="portfolio-subtitle" xml:space="preserve">
-    <value>Сделано нами для вас</value>
-  </data>
-  <data name="portfolio-title" xml:space="preserve">
-    <value>Портфолио</value>
+  <data name="testimonials-title" xml:space="preserve">
+    <value>Referencie</value>
   </data>
 </root>
