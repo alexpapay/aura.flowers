@@ -9,9 +9,9 @@ using Microsoft.Extensions.Options;
 using System.Globalization;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.Extensions.Hosting;
-using website.core.Extensions;
-using website.core.Services.Email.Models;
-using website.core.Services.GoogleRecaptcha.Models;
+using website.services.Extensions;
+using website.core.Models.Email;
+using website.core.Models.GoogleRecaptcha;
 
 namespace aura.flowers
 {

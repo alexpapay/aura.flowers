@@ -9,10 +9,9 @@ using System.Threading.Tasks;
 using aura.flowers.Utils;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Options;
-using website.core.Services.Email.Interfaces;
-using website.core.Services.Email.Models;
-using website.core.Services.GoogleRecaptcha.Interfaces;
-using website.core.Services.GoogleRecaptcha.Models;
+using website.services.Interfaces;
+using website.core.Models.Email;
+using website.core.Models.GoogleRecaptcha;
 
 namespace aura.flowers.Controllers
 {
