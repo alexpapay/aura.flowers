@@ -8,10 +8,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using System.Globalization;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
 using website.services.Extensions;
 using website.core.Models.Email;
 using website.core.Models.GoogleRecaptcha;
+using website.data;
 
 namespace aura.flowers
 {
@@ -38,6 +40,10 @@ namespace aura.flowers
 
             // Setup singletons by config file sections:
             services.AddSingleton(_ => Configuration);
+
+            // Authorization by Identity configuration (using Pomelo MySQL provider):
+            services.AddDbContext<IdentityContext>(options =>
+                options.UseMySql(Configuration.GetConnectionString("IdentityConnectionString")));
 
             services.Configure<EmailConfiguration>(Configuration.GetSection("EmailConfiguration"));
             services.Configure<GoogleRecaptchaConfiguration>(Configuration.GetSection("GoogleRecaptchaConfiguration"));
