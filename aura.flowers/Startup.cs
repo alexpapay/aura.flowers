@@ -8,8 +8,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using System.Globalization;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
+using website.core.Models.Auth;
 using website.services.Extensions;
 using website.core.Models.Email;
 using website.core.Models.GoogleRecaptcha;
@@ -38,15 +40,26 @@ namespace aura.flowers
             // Dependency injection:
             services.AddInjections();
 
-            // Setup singletons by config file sections:
+            // Setup singleton and config classes by config file sections:
             services.AddSingleton(_ => Configuration);
+            services.Configure<EmailConfiguration>(Configuration.GetSection("EmailConfiguration"));
+            services.Configure<GoogleRecaptchaConfiguration>(Configuration.GetSection("GoogleRecaptchaConfiguration"));
+
+            // Website context configuration:
+            services.AddDbContext<WebsiteContext>(options =>
+                options.UseMySql(Configuration.GetConnectionString("WebsiteConnectionString")));
 
             // Authorization by Identity configuration (using Pomelo MySQL provider):
             services.AddDbContext<IdentityContext>(options =>
                 options.UseMySql(Configuration.GetConnectionString("IdentityConnectionString")));
+            services.AddIdentity<User, IdentityRole>()
+                .AddEntityFrameworkStores<IdentityContext>();
 
-            services.Configure<EmailConfiguration>(Configuration.GetSection("EmailConfiguration"));
-            services.Configure<GoogleRecaptchaConfiguration>(Configuration.GetSection("GoogleRecaptchaConfiguration"));
+            // Cookie configuration:
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.LoginPath = "/Account/Login";
+            });
 
             // Localization:
             services.AddLocalization(options => options.ResourcesPath = "Resources");
@@ -69,7 +82,8 @@ namespace aura.flowers
             services.AddControllersWithViews()
                 .SetCompatibilityVersion(CompatibilityVersion.Latest)
                 .AddDataAnnotationsLocalization()
-                .AddViewLocalization();
+                .AddViewLocalization()
+                .AddRazorRuntimeCompilation();
         }
 
         /// <summary>
@@ -105,11 +119,14 @@ namespace aura.flowers
             app.UseDefaultFiles();
             app.UseRouting();
 
+            app.UseAuthentication();
+            app.UseAuthorization();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    "default",
+                    "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

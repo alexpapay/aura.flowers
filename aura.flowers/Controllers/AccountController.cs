@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using aura.flowers.Models.Account;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using website.core.Models.Auth;
@@ -27,8 +28,9 @@ namespace aura.flowers.Controllers
         /// GET: Account/Index
         /// Account management index page.
         /// </summary>
-        /// <returns>Show indx page.</returns>
+        /// <returns>Show index page.</returns>
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> Index()
         {
             return View(await _authService.GetAllUsers());
@@ -40,12 +42,10 @@ namespace aura.flowers.Controllers
         /// </summary>
         /// <returns>Register page view.</returns>
         [HttpGet]
+        [AllowAnonymous]
         public IActionResult Register()
         {
-            if (!User.Identity.IsAuthenticated)
-                return RedirectToAction("Login", "Account");
-
-            return View();
+            return RedirectToAction("Register", "Account");
         }
 
         /// <summary>
@@ -55,6 +55,7 @@ namespace aura.flowers.Controllers
         /// <param name="model"></param>
         /// <returns>Redirect on account main page or showing validation errors.</returns>
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
             if (!ModelState.IsValid)
@@ -85,6 +86,7 @@ namespace aura.flowers.Controllers
         /// </summary>
         /// <returns>Show login form.</returns>
         [HttpGet]
+        [AllowAnonymous]
         public IActionResult Login()
         {
             return View();
@@ -97,6 +99,7 @@ namespace aura.flowers.Controllers
         /// <param name="model">Login view model object.</param>
         /// <returns>Redirect on Hangfire dashboard or login page if error.</returns>
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Login(LoginViewModel model)
         {
             if (!ModelState.IsValid)
@@ -124,6 +127,7 @@ namespace aura.flowers.Controllers
         /// <param name="id">User id string.</param>
         /// <returns>Change password view.</returns>
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> ChangePassword(string id)
         {
             User user = await _userManager.FindByIdAsync(id);
@@ -146,6 +150,7 @@ namespace aura.flowers.Controllers
         /// <param name="model">Change password model object.</param>
         /// <returns>Account management index page or error page.</returns>
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> ChangePassword(ChangePasswordViewModel model)
         {
             if (ModelState.IsValid)
@@ -190,6 +195,7 @@ namespace aura.flowers.Controllers
         /// <param name="id">User id string.</param>
         /// <returns>Account magement page or error page.</returns>
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> Remove(string id)
         {
             User user = await _userManager.FindByIdAsync(id);
@@ -199,7 +205,9 @@ namespace aura.flowers.Controllers
 
             IdentityResult result = await _userManager.DeleteAsync(user);
 
-            return RedirectToAction("Index", "Account");
+            return result.Succeeded ?
+                RedirectToAction("Index", "Account") :
+                RedirectToAction("Error", "Home");
         }
 
         /// <summary>
@@ -208,6 +216,7 @@ namespace aura.flowers.Controllers
         /// </summary>
         /// <returns>Redirect on login page.</returns>
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> LogOff()
         {
             await _signInManager.SignOutAsync();

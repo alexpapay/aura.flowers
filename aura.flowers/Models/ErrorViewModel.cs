@@ -1,5 +1,3 @@
-using System;
-
 namespace aura.flowers.Models
 {
     public class ErrorViewModel
