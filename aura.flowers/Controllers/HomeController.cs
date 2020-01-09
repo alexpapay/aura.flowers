@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 using aura.flowers.Utils;
 using Microsoft.AspNetCore.Authorization;
@@ -12,6 +13,7 @@ using Microsoft.Extensions.Options;
 using website.services.Interfaces;
 using website.core.Models.Email;
 using website.core.Models.GoogleRecaptcha;
+using website.core.Utils;
 
 namespace aura.flowers.Controllers
 {
@@ -99,10 +101,10 @@ namespace aura.flowers.Controllers
                         new EmailAddress{ Name = "Aura.Flowers sales manager", Address = _emailConfiguration.Value.MailTo }
                     },
                     Subject = "Aura.Flowers order." +
-                              (model.SelectedProductId != 0 ? $" Product type {(ProductTypes)model.SelectedProductId}" :
+                              (model.SelectedProductId != 0 ? $" Product type {((ProductTypes)model.SelectedProductId).GetAttribute<DisplayAttribute>().Name}" :
                                   string.Empty),
-                    Content = "<h3>Good day, Ekaterina!</h3>" + $"<p>{model.Name} is interested of your web site.</p>" +
-                              (model.SelectedProductId != 0 ? $"<p>Customer selected product type {(ProductTypes)model.SelectedProductId}.</p>" :
+                    Content = "<h3>Good day, Aura Flowers!</h3>" + $"<p>{model.Name} is interested of your web site.</p>" +
+                              (model.SelectedProductId != 0 ? $"<p>Customer selected product type {((ProductTypes)model.SelectedProductId).GetAttribute<DisplayAttribute>().Name}.</p>" :
                                   string.Empty) +
                               $"<p>Customer e-mail: {model.Email}.</p><p>Customer message was: {model.Message}</p>"
                 });

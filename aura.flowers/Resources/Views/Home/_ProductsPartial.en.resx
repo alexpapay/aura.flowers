@@ -123,6 +123,12 @@
   <data name="products-bigflowers-header" xml:space="preserve">
     <value>Big flowers - compositions</value>
   </data>
+  <data name="products-decor-for-you-description" xml:space="preserve">
+    <value>Ideal for creating an unusual and magical setting. Photo zones at events and the interior of photo studios, retail and office premises.</value>
+  </data>
+  <data name="products-decor-for-you-header" xml:space="preserve">
+    <value>Decor created especially for you</value>
+  </data>
   <data name="products-framework-description" xml:space="preserve">
     <value>Add color to your life! Create a cozy atmosphere in the house and set up for positive thoughts.</value>
   </data>
@@ -167,12 +173,6 @@
   </data>
   <data name="products-title" xml:space="preserve">
     <value>Products</value>
-  </data>
-  <data name="products-walls-description" xml:space="preserve">
-    <value>Ideal for creating an unusual and magical setting. Photo zones at events and the interior of photo studios, retail and office premises.</value>
-  </data>
-  <data name="products-walls-header" xml:space="preserve">
-    <value>Wall</value>
   </data>
   <data name="products-wings-description" xml:space="preserve">
     <value>The trend of design decisions and photo shoots. Will make a good emphasis on the chosen style.</value>
